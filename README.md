@@ -1,2 +1,2 @@
 # menu-web
-Personal menu, new and improved. And shiny. And stuff.
+Frontend-applikation för KTH:s personliga meny

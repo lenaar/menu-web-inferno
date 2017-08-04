@@ -1,0 +1,7 @@
+/* Typescript settings (I want to supress some VS Code warnings */
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "allowJs": true
+    }
+}
