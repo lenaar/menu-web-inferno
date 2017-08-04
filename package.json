@@ -40,6 +40,7 @@
     "history": "^4.6.3",
     "inferno": "^3.5.2",
     "inferno-animation": "^0.2.0",
+    "inferno-bootstrap": "^0.1.2",
     "inferno-component": "^3.7.0",
     "inferno-router": "^3.7.0",
     "inferno-server": "^3.7.0",

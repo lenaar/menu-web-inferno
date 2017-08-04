@@ -23,7 +23,8 @@ createUtility({
 // import searchStore from './stores/searchStore'
 
 // Import pages
-import MenuPage from './pages/MenuPage.jsx'
+import ProfilePage from './pages/ProfilePage.jsx'
+import MainMenu from './widgets/MainMenu.jsx'
 
 // Set up all the search entities
 // require('./entities')
@@ -39,8 +40,11 @@ function routeFactory (initialPath) {
 
   return (
       <Router history={ browserHistory }>
-        <Route path="/menu" component={ MenuPage } />
+        <Route path="/menu" component={ MainMenu } >
+          <Route path="/profile" component={ ProfilePage } />
+        </Route>
       </Router>
+
   )
 }
 
