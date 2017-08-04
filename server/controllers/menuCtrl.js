@@ -5,12 +5,7 @@ const log = require('kth-node-log')
 const InfernoServer = require('inferno-server')
 const createElement = require('inferno-create-element')
 const { RouterContext, match } = require('inferno-router')
-const { toJS } = require('mobx')
 const routeFactory = require('../../dist/js/server/app.js').default
-const SearchWidget = require('../../dist/js/server/SearchWidget.js').default
-
-// const searchClient = require('../lib/searchClient')
-const searchClient = require('../lib/viaSearchClient')
 
 module.exports = {
   getIndex: _getIndex
@@ -40,7 +35,7 @@ function _getIndex (req, res, next) {
 
     res.render('menu/index', {
       html: html,
-      initialState: JSON.stringify(hydrateStores(renderProps)),
+      initialState: JSON.stringify({}),
       debug: 'debug' in req.query
     })
   } catch (err) {
