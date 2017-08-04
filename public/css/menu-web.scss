@@ -11,41 +11,56 @@ body {
         margin: 0 auto;
         padding: 0.5rem 0;
     }
+
+    #kth-menu-page-container {
+        position: absolute;
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        z-index: 99999;
+    }
+    .kth-menu-page {
+        background-color: white;
+        border: 1px solid #777;
+        width: 100%;
+        color: black;
+    }
+
+    .kth-menu-content {
+        margin: 1rem;
+    }
 }
 
 .PageAnimation {
     &-leave {
         // Leave animation start state
         // width: auto;
-        opacity: 1;
     }
 
     &-leave-active {
         // Leave animation transitions
         overflow: hidden;
-        transition: height 0.3s ease-out, opacity 0.2s ease-in;
+        transition: height 0.3s ease-out;
     }
 
     &-leave-end {
         // Leave animation end state
         // width: 0;
         height: 0;
-        opacity: 0;
     }
 
     &-enter {
         // Enter animation start state
         height: 0;
-        opacity: 0;
     }
 
     &-enter-active {
         // Enter animation transitions
-        transition: height 0.2s ease-out, opacity 0.5s ease-in;
+        overflow: hidden;
+        transition: height .2s ease-out;
     }
 
     &-enter-end {
         // Enter animation end state
-        opacity: 1;
     }
 }

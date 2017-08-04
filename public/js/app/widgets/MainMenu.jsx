@@ -5,17 +5,28 @@ import Nav from 'inferno-bootstrap/lib/Navigation/Nav.jsx'
 import NavItem from 'inferno-bootstrap/lib/Navigation/NavItem.jsx'
 import NavLink from 'inferno-bootstrap/lib/Navigation/NavLink.jsx'
 import { Link } from 'inferno-router'
+import classnames from 'classnames'
 
 class MainMenu extends Component {
   constructor (props) {
     super(props)
+
+    this.state = {
+      active: false
+    }
+  }
+
+  componentDidMount () {
+    this.setState({
+      active: true
+    })
   }
 
   render () {
     const lang = 'sv' // TODO: Pick up from actual language settings
 
     return (
-      <div id='kth-menu-container'>
+      <div id='kth-menu-container' classnames={classnames(!this.state.active && 'InfernoAnimation-noAnim')}>
         <Nav>
           <NavItem>
             <Link to='/menu/profile'>Profile</Link>
@@ -36,7 +47,7 @@ class MainMenu extends Component {
             <NavLink href='#'>Services</NavLink>
           </NavItem>
         </Nav>
-        <div id="kth-menu-page">{this.props.children}</div>
+        <div id="kth-menu-page-container">{this.props.children}</div>
       </div>
     )
   }

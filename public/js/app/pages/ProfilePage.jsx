@@ -13,7 +13,9 @@ class ProfilePage extends Component {
 
     return (
       <Animated className="kth-menu-page" prefix="PageAnimation">
-      ProfilePage
+        <div className="kth-menu-content">
+          ProfilePage
+        </div>
       </Animated>
     )
   }
