@@ -3,14 +3,24 @@ body {
 }
 
 #kth-menu {
-    background-color: black;
+    background-color:#65656C;;
     #kth-menu-container {
         position: relative;
-        color: white;
         max-width: 900px;
         width: 100%;
         margin: 0 auto;
         padding: 0.5rem 0;
+
+        .nav-item a {
+            color: #fff;
+
+            &:focus {
+                background: #2191c4;
+            }
+            &:hover {
+                background: #505056;
+            }
+        }
     }
 
     #kth-menu-page-container {
