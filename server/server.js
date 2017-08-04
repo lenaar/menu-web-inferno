@@ -195,8 +195,8 @@ server.use('/', systemRoute.getRouter())
 
 // App routes
 const appRoute = AppRouter()
-appRoute.get('search.index', config.proxyPrefixPath.uri + '/', Menu.getIndex)
 appRoute.get('search.auth', config.proxyPrefixPath.uri + '/auth', serverLogin, Menu.getIndex)
+appRoute.get('search.index', config.proxyPrefixPath.uri + '/?*', Menu.getIndex)
 server.use('/', appRoute.getRouter())
 
 // Not found etc
