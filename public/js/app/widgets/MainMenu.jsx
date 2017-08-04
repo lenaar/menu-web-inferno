@@ -26,7 +26,7 @@ class MainMenu extends Component {
     const lang = 'sv' // TODO: Pick up from actual language settings
 
     return (
-      <div id='kth-menu-container' classnames={classnames(!this.state.active && 'InfernoAnimation-noAnim')}>
+      <div id='kth-menu-container' className={classnames(!this.state.active && 'InfernoAnimation--noAnim')}>
         <Nav>
           <NavItem>
             <Link to='/menu/profile'>Profile</Link>
