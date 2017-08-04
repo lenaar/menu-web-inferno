@@ -23,8 +23,13 @@ createUtility({
 // import searchStore from './stores/searchStore'
 
 // Import pages
+import SchedulePage from './pages/SchedulePage.jsx'
 import ProfilePage from './pages/ProfilePage.jsx'
 import MainMenu from './widgets/MainMenu.jsx'
+import CoursePage from './pages/CoursePage.jsx'
+import ProgramPage from './pages/ProgramPage.jsx'
+import GrourpPage from './pages/GroupPage.jsx'
+import ServicesPage from './pages/ServicesPage.jsx'
 
 // Set up all the search entities
 // require('./entities')
@@ -42,6 +47,11 @@ function routeFactory (initialPath) {
       <Router history={ browserHistory }>
         <Route path="/menu" component={ MainMenu } >
           <Route path="/profile" component={ ProfilePage } />
+          <Route path="/schedule" component={ SchedulePage} />
+          <Route path="/course" component={ CoursePage }/>
+          <Route path="/program" component={ ProgramPage }/>
+          <Route path="/group" component={ GrourpPage }/>
+          <Route path="/services" component={ ServicesPage }/>
         </Route>
       </Router>
 

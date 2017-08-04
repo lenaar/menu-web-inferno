@@ -3,7 +3,6 @@
 import Component from 'inferno-component'
 import Nav from 'inferno-bootstrap/lib/Navigation/Nav.jsx'
 import NavItem from 'inferno-bootstrap/lib/Navigation/NavItem.jsx'
-import NavLink from 'inferno-bootstrap/lib/Navigation/NavLink.jsx'
 import { Link } from 'inferno-router'
 import classnames from 'classnames'
 
@@ -32,19 +31,19 @@ class MainMenu extends Component {
             <Link to='/menu/profile'>Profile</Link>
           </NavItem>
           <NavItem>
-            <NavLink href='#schema'>Schedule</NavLink>
+            <Link to='/menu/schedule'>Schedule</Link>
           </NavItem>
           <NavItem>
-            <NavLink href='#course'>Course</NavLink>
+            <Link to='/menu/course'>Course</Link>
           </NavItem>
           <NavItem>
-            <NavLink href='#program'>Program</NavLink>
+            <Link to='/menu/program'>Program</Link>
           </NavItem>
           <NavItem>
-            <NavLink href='#group'>Group</NavLink>
+            <Link to='/menu/group'>Group</Link>
           </NavItem>
           <NavItem>
-            <NavLink href='#'>Services</NavLink>
+            <Link to='/menu/services'>Services</Link>
           </NavItem>
         </Nav>
         <div id="kth-menu-page-container">{this.props.children}</div>
