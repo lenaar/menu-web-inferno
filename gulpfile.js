@@ -78,7 +78,7 @@ gulp.task('inferno', function () {
 
 gulp.task('clean', clean)
 
-gulp.task('build', ['moveResources', 'vendor', 'webpack', 'inferno'], () => sass())
+gulp.task('build', ['moveResources', 'inferno'], () => sass())
 
 gulp.task('watch', ['build'], function () {
   gulp.watch(['./public/css/**/*.scss'], ['transpileSass'])

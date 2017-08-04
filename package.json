@@ -43,7 +43,6 @@
     "inferno-component": "^3.7.0",
     "inferno-router": "^3.7.0",
     "inferno-server": "^3.7.0",
-    "isomorphic-schema": "^0.7.0",
     "kth-node-access-log": "^0.2.0",
     "kth-node-api-call": "^1.2.2",
     "kth-node-configuration": "^1.4.0",
