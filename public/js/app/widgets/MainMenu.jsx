@@ -47,13 +47,11 @@ class MainMenu extends Component {
             <Link to='/menu/services'>Services</Link>
           </NavItem>
         </Nav>
-        <div id="kth-menu-page-container">
-          {this.props.children && <Animated prefix="PageAnimation">
-            <CrossFade className="kth-menu-page" prefix="MenuCrossFade--Animation">
-              {this.props.children}
-            </CrossFade>
-          </Animated>}
-        </div>
+        {this.props.children && <Animated prefix="PageAnimation" id="kth-menu-page-container">
+          <CrossFade className="kth-menu-page" prefix="MenuCrossFade--Animation">
+            {this.props.children}
+          </CrossFade>
+        </Animated>}
       </div>
     )
   }

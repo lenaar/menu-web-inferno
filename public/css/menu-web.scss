@@ -3,13 +3,18 @@ body {
 }
 
 #kth-menu {
-    background-color:#65656C;;
+    background-color:#65656C;
+
     #kth-menu-container {
         position: relative;
-        max-width: 900px;
         width: 100%;
         margin: 0 auto;
-        padding: 0.5rem 0;
+
+        .nav {
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+        }
 
         .nav-item a {
             color: #fff;
@@ -43,7 +48,8 @@ body {
 
 .MenuCrossFade--Animation {
     &-cross-fade-active {
-        transition: height .3s ease-out;
+        overflow: hidden;
+        transition: height .2s ease-in;
     }
 
     &-enter,
@@ -57,7 +63,7 @@ body {
     &-leave-active {
         /* Enter animation transitions */
         /* Leave animation transitions */
-        transition: opacity .3s ease-in;
+        transition: opacity .2s ease-in;
     }
 
     &-enter-end,
@@ -77,7 +83,7 @@ body {
     &-leave-active {
         // Leave animation transitions
         overflow: hidden;
-        transition: height 0.2s ease-out, opacity .5s ease-in;
+        transition: height 0.2s ease-in, opacity .2s ease-in;
     }
 
     &-leave-end {
@@ -96,7 +102,7 @@ body {
     &-enter-active {
         // Enter animation transitions
         overflow: hidden;
-        transition: height .2s ease-out, opacity .5s ease-in;
+        transition: height .2s ease-in, opacity .2s ease-in;
     }
 
     &-enter-end {
