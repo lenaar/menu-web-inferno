@@ -5,6 +5,7 @@ body {
 #kth-menu {
     background-color: black;
     #kth-menu-container {
+        position: relative;
         color: white;
         max-width: 900px;
         width: 100%;
@@ -16,13 +17,15 @@ body {
         position: absolute;
         width: 100%;
         max-width: 900px;
-        margin: 0 auto;
+        margin: 0.5rem auto;
         z-index: 99999;
     }
     .kth-menu-page {
-        background-color: white;
-        border: 1px solid #777;
+        margin-top: -1px;
         width: 100%;
+        border: 1px solid #777;
+        border-top-color: black;
+        background-color: white;
         color: black;
     }
 
