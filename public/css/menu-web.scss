@@ -26,21 +26,45 @@ body {
     #kth-menu-page-container {
         position: absolute;
         width: 100%;
-        max-width: 900px;
-        margin: 0.5rem auto;
+        margin: 0 auto;
         z-index: 99999;
+        background-color: white;
+        border-bottom: 2px solid #bdbcbc;
     }
     .kth-menu-page {
-        margin-top: -1px;
+        margin: 0 auto;
+        padding: 1rem;
         width: 100%;
-        border: 1px solid #777;
-        border-top-color: black;
+        max-width: 1224px;
         background-color: white;
-        color: black;
+        color: #5E5E5E;
+    }
+}
+
+.MenuCrossFade--Animation {
+    &-cross-fade-active {
+        transition: height .3s ease-out;
     }
 
-    .kth-menu-content {
-        margin: 1rem;
+    &-enter,
+    &-leave-end {
+        /* Enter animation start state */
+        /* Leave animation end state */
+        opacity: 0;
+    }
+
+    &-enter-active,
+    &-leave-active {
+        /* Enter animation transitions */
+        /* Leave animation transitions */
+        transition: opacity .3s ease-in;
+    }
+
+    &-enter-end,
+    &-leave {
+        /* Enter animation end state */
+        /* Leave animation start state */
+        opacity: 1;
     }
 }
 
@@ -53,24 +77,26 @@ body {
     &-leave-active {
         // Leave animation transitions
         overflow: hidden;
-        transition: height 0.3s ease-out;
+        transition: height 0.2s ease-out, opacity .5s ease-in;
     }
 
     &-leave-end {
         // Leave animation end state
         // width: 0;
         height: 0;
+        opacity: 0;
     }
 
     &-enter {
         // Enter animation start state
         height: 0;
+        opacity: 0;
     }
 
     &-enter-active {
         // Enter animation transitions
         overflow: hidden;
-        transition: height .2s ease-out;
+        transition: height .2s ease-out, opacity .5s ease-in;
     }
 
     &-enter-end {

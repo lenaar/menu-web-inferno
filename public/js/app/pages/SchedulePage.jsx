@@ -1,7 +1,6 @@
 'use strict'
 
 import Component from 'inferno-component'
-import {Animated} from 'inferno-animation'
 
 class SchedulePage extends Component {
   constructor (props) {
@@ -12,11 +11,10 @@ class SchedulePage extends Component {
     const lang = 'sv' // TODO: Pick up from actual language settings
 
     return (
-      <Animated className="kth-menu-page" prefix="PageAnimation">
-        <div className="kth-menu-content">
-          SchedulePage
-        </div>
-      </Animated>
+      <div className="kth-menu-content">
+        <h2>SchedulePage</h2>
+        <p>And some more cool stuff...</p>
+      </div>
     )
   }
 }

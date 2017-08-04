@@ -5,6 +5,7 @@ import Nav from 'inferno-bootstrap/lib/Navigation/Nav.jsx'
 import NavItem from 'inferno-bootstrap/lib/Navigation/NavItem.jsx'
 import { Link } from 'inferno-router'
 import classnames from 'classnames'
+import { Animated, CrossFade } from 'inferno-animation'
 
 class MainMenu extends Component {
   constructor (props) {
@@ -46,7 +47,13 @@ class MainMenu extends Component {
             <Link to='/menu/services'>Services</Link>
           </NavItem>
         </Nav>
-        <div id="kth-menu-page-container">{this.props.children}</div>
+        <div id="kth-menu-page-container">
+          {this.props.children && <Animated prefix="PageAnimation">
+            <CrossFade className="kth-menu-page" prefix="MenuCrossFade--Animation">
+              {this.props.children}
+            </CrossFade>
+          </Animated>}
+        </div>
       </div>
     )
   }
