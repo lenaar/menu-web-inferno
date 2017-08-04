@@ -34,7 +34,7 @@ function _getIndex (req, res, next) {
     const html = InfernoServer.renderToString(createElement(RouterContext, renderProps))
 
     res.render('menu/index', {
-      html: html,
+      menuHTML: html,
       initialState: JSON.stringify({}),
       debug: 'debug' in req.query
     })

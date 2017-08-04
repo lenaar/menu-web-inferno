@@ -13,7 +13,7 @@ class MenuPage extends Component {
     const lang = 'sv' // TODO: Pick up from actual language settings
 
     return (
-      <div>
+      <div id="kth-menu-container">
         My Menu
       </div>
     )

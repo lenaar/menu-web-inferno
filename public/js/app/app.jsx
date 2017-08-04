@@ -51,7 +51,7 @@ if (typeof window !== 'undefined') {
     } catch (e) {
       console.log("Couldn't load inferno devtools")
     }
-    Inferno.render(appRoutes, document.getElementById('app'))
+    Inferno.render(appRoutes, document.getElementById('kth-menu'))
 }
 
 export default routeFactory
