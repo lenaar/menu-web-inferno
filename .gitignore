@@ -38,3 +38,4 @@ docker-compose*.yml
 yarn.lock
 infernoClientSize.html
 infernoServerSize.html
+package-lock.json
