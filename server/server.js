@@ -90,6 +90,8 @@ server.use(config.proxyPrefixPath.uri + '/static/js/components', express.static(
 // Expose browser configurations
 server.use(config.proxyPrefixPath.uri + '/static/browserConfig', browserConfigHandler)
 // Map static content like images, css and js.
+server.use(config.proxyPrefixPath.uri + '/static/kth-style', express.static('./node_modules/kth-style/dist'))
+// Map static content like images, css and js.
 server.use(config.proxyPrefixPath.uri + '/static', express.static('./dist'))
 // Return 404 if static file isn't found so we don't go through the rest of the pipeline
 server.use(config.proxyPrefixPath.uri + '/static', function (req, res, next) {

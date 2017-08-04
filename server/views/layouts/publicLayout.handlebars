@@ -13,12 +13,11 @@
     {{/if}}
 
     {{prefixStyle '/static/css/bootstrap/bootstrap.min.css' 'styles' 'screen'}}
-    {{prefixStyle '/static/css/kth-style/kth-bootstrap-theme.css' 'styles' 'screen'}}
-    {{prefixStyle '/static/css/search-web.css' 'styles' 'screen'}}
+    {{prefixStyle '/static/kth-style/css/kth-bootstrap.css' 'styles' 'screen'}}
+    {{prefixStyle '/static/css/menu-web.css' 'styles' 'screen'}}
 
     {{{render 'styles'}}}
 
-    {{prefixScript '/static/js/vendor.js' 'head-scripts'}}
     {{prefixScript '/static/browserConfig' 'head-scripts'}}
     {{#extend 'head-scripts'}}
       <script src="//www.kth.se/social/toolbar/widget.js"></script>
