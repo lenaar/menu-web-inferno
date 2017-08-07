@@ -15,6 +15,10 @@ Usage:
 </Filter>
 */
 
+export function FilterHeader (props) {
+  return null
+}
+
 export function FilterItem (props) {
   return null
 }
@@ -23,13 +27,23 @@ export function Filter ({className, value, onChange, ...props}) {
   return (
     <Nav pills className={classnames('nav-filter', className)}>
       {props.children.map((item) => {
-        const active = value === item.props.value
 
-        return (
-          <NavItem>
-            <NavLink href="#" onClick={(e) => {e.preventDefault(); onChange(item.props.value)}} active={active} {...item.props} />
-          </NavItem>
-        )
+        if (item.type.displayName === 'FilterHeader') {
+          const { className, children } = item.props
+          return (
+            <NavItem>
+              <div className={classnames('nav-filter-header', className)}>{children}</div>
+            </NavItem>
+          )
+        } else {
+          const active = value === item.props.value
+
+          return (
+            <NavItem>
+              <NavLink href="#" onClick={(e) => {e.preventDefault(); onChange(item.props.value)}} active={active} {...item.props} />
+            </NavItem>
+          )
+        }
       })}
     </Nav>
   )

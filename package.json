@@ -28,7 +28,7 @@
     "axios": "^0.16.2",
     "bluebird": "^3.4.6",
     "body-parser": "^1.15.1",
-    "bootstrap": "^3.3.6",
+    "bootstrap": "^4.0.0-alpha.6",
     "classnames": "^2.2.5",
     "co": "^4.6.0",
     "component-registry": "^0.2.5",

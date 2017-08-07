@@ -12,7 +12,7 @@ import Nav from 'inferno-bootstrap/lib/Navigation/Nav.jsx'
 import NavItem from 'inferno-bootstrap/lib/Navigation/NavItem.jsx'
 import NavLink from 'inferno-bootstrap/lib/Navigation/NavLink.jsx'
 
-import { Filter, FilterItem } from '../widgets/Filter.jsx'
+import { Filter, FilterHeader, FilterItem } from '../widgets/Filter.jsx'
 
 class CoursePage extends Component {
   constructor (props) {
@@ -76,6 +76,7 @@ class CoursePage extends Component {
                 <Row>
                   <Col>
                     <Filter onChange={this.didFilter} value={this.state.filterValue}>
+                      <FilterHeader>Filtrera:</FilterHeader>
                       <FilterItem value="comming">Kommande</FilterItem>
                       <FilterItem value="current">Aktuella</FilterItem>
                       <FilterItem value="unfinished">Oavslutade</FilterItem>

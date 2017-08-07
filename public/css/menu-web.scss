@@ -142,3 +142,11 @@ body {
         // Enter animation end state
     }
 }
+
+
+/* Filter Widget*/
+@import 'bootstrap/scss/variables';
+.nav-filter-header {
+    margin: $nav-link-padding;
+    margin-left: 0;
+}

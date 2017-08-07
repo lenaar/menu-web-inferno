@@ -30,28 +30,28 @@ class MainMenu extends Component {
       <div id='kth-menu-container' className={classnames(!this.state.active && 'InfernoAnimation--noAnim')}>
         <Nav className="main-m">
           <NavItem>
-            <Link to='/menu/profile'>Lena</Link>
+            <Link className="nav-link" to='/menu/profile'>Lena</Link>
           </NavItem>
           <NavItem>
-            <Link to='/menu/schedule'>Schema</Link>
+            <Link className="nav-link" to='/menu/schedule'>Schema</Link>
           </NavItem>
           <NavItem>
-            <Link to='/menu/course'>Kurser&Program</Link>
+            <Link className="nav-link" to='/menu/course'>Kurser&Program</Link>
           </NavItem>
           <NavItem>
-            <Link to='/menu/group'>Grupper</Link>
+            <Link className="nav-link" to='/menu/group'>Grupper</Link>
           </NavItem>
           <NavItem>
-            <Link to='/menu/services'>Studieadministrationn</Link>
+            <Link className="nav-link" to='/menu/services'>Studieadministrationn</Link>
           </NavItem>
           <NavItem>
-            <Link to='/menu/mail'>Mail</Link>
+            <Link className="nav-link" to='/menu/mail'>Mail</Link>
           </NavItem>
           <NavItem>
-            <Link to='/menu/notices'> <Badge pill color="danger">10</Badge>   Noticer</Link>
+            <Link className="nav-link" to='/menu/notices'> <Badge pill color="danger">10</Badge>   Noticer</Link>
           </NavItem>
           <NavItem>
-            <Link to='/menu/settings'>Inställningar</Link>
+            <Link className="nav-link" to='/menu/settings'>Inställningar</Link>
           </NavItem>
         </Nav>
         {this.props.children && <Animated prefix="PageAnimation" id="kth-menu-page-container">
