@@ -27,9 +27,13 @@ import SchedulePage from './pages/SchedulePage.jsx'
 import ProfilePage from './pages/ProfilePage.jsx'
 import MainMenu from './widgets/MainMenu.jsx'
 import CoursePage from './pages/CoursePage.jsx'
-import ProgramPage from './pages/ProgramPage.jsx'
 import GrourpPage from './pages/GroupPage.jsx'
 import ServicesPage from './pages/ServicesPage.jsx'
+import MailPage from './pages/MailPage.jsx'
+import NoticesPage from './pages/NoticesPage.jsx'
+import SettingsPage from './pages/SettingsPage.jsx'
+
+
 
 // Set up all the search entities
 // require('./entities')
@@ -49,9 +53,11 @@ function routeFactory (initialPath) {
           <Route path="/profile" component={ ProfilePage } />
           <Route path="/schedule" component={ SchedulePage} />
           <Route path="/course" component={ CoursePage }/>
-          <Route path="/program" component={ ProgramPage }/>
           <Route path="/group" component={ GrourpPage }/>
           <Route path="/services" component={ ServicesPage }/>
+          <Route path="/mail" component={ MailPage }/>
+          <Route path="/notices" component={ NoticesPage} />
+          <Route path="/settings" component={ SettingsPage} />
         </Route>
       </Router>
 

@@ -35,16 +35,22 @@ class MainMenu extends Component {
             <Link to='/menu/schedule'>Schedule</Link>
           </NavItem>
           <NavItem>
-            <Link to='/menu/course'>Course</Link>
-          </NavItem>
-          <NavItem>
-            <Link to='/menu/program'>Program</Link>
+            <Link to='/menu/course'>Course&Program</Link>
           </NavItem>
           <NavItem>
             <Link to='/menu/group'>Group</Link>
           </NavItem>
           <NavItem>
-            <Link to='/menu/services'>Services</Link>
+            <Link to='/menu/services'>Study administration</Link>
+          </NavItem>
+          <NavItem>
+            <Link to='/menu/mail'>Mail</Link>
+          </NavItem>
+          <NavItem>
+            <Link to='/menu/notices'>Noticer</Link>
+          </NavItem>
+          <NavItem>
+            <Link to='/menu/settings'>Settings</Link>
           </NavItem>
         </Nav>
         {this.props.children && <Animated prefix="PageAnimation" id="kth-menu-page-container">

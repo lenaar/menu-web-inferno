@@ -26,6 +26,29 @@ body {
                 background: #505056;
             }
         }
+
+        #study-admin {
+            h3 {
+                border-bottom: solid 1px #bdbcbc;
+            }
+            .nav-item {
+                border-bottom: solid 1px #bdbcbc;
+                font-weight: 700;
+            }
+
+            .nav-item a {
+                color: #262626;
+                &:focus {
+                    background: #bdbcbc;
+                }
+                &:hover {
+                    background: #bdbcbc;
+                }
+                &.sub-nav {
+                    font-weight: normal;
+                }
+            }
+        }
     }
 
     #kth-menu-page-container {

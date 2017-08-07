@@ -12,11 +12,9 @@ class GroupPage extends Component {
     const lang = 'sv' // TODO: Pick up from actual language settings
 
     return (
-      <Animated className="kth-menu-page" prefix="PageAnimation">
         <div className="kth-menu-content">
           Social groupS
         </div>
-      </Animated>
     )
   }
 }
