@@ -18,7 +18,7 @@ class SchedulePage extends Component {
 
     return (
       <div className="kth-menu-content">
-         <Container id="schedule-m">
+         <Container>
               <Row>
                 <Col xs="4">
                   <h3>Måndag 14 augusti</h3>

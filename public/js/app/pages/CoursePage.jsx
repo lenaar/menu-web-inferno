@@ -53,16 +53,16 @@ class CoursePage extends Component {
               </Row>
 
               <Row>
-                <Col xs="4" className="programs" id="programs-m">
+                <Col xs="4" className="programs">
                   <h3>Mina program</h3>
                   <h4> Civilingenjörsutbildning i datateknik(CDATE, 300hp)</h4>
-                  <Nav vertical>
+                  <Nav vertical className="white-m">
                     <NavItem>
                       <NavLink href="#http://localdev.kth.se:8000/social/program/cdate/">Programinformation</NavLink>
                     </NavItem>
                   </Nav>
                 </Col>
-                <Col className="courses" id="courses-m">
+                <Col className="courses">
                   <h3>Mina kurser</h3>
 
                   <Filter onChange={this.didFilter} value={this.state.filterValue}>
@@ -73,7 +73,7 @@ class CoursePage extends Component {
                   </Filter>
 
                   <h4>Algebra och geometri (SF1624)</h4>
-                  <Nav vertical>
+                  <Nav vertical className="white-m">
                     <NavItem>
                       <NavLink href="#http://localdev.kth.se:8000/social/course/SF1624/">Kursinformation</NavLink>
                     </NavItem>
@@ -88,13 +88,13 @@ class CoursePage extends Component {
                     </NavItem>
                   </Nav>
                   <h4>Den hållbara ingenjören i trådlösa system (EQ2220)</h4>
-                  <Nav vertical>
+                  <Nav vertical className="white-m">
                     <NavItem>
                       <NavLink href="#http://localdev.kth.se:8000/social/course/EQ2220/">Kursinformation</NavLink>
                     </NavItem>
                   </Nav>
                   <h4>Ledarskap för säkerhet i kärnteknisk verksamhet (SH2610)</h4>
-                  <Nav vertical>
+                  <Nav vertical className="white-m">
                     <NavItem>
                       <NavLink href="#http://localdev.kth.se:8000/social/course/SH2610/">Kursinformation</NavLink>
                     </NavItem>

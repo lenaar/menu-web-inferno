@@ -28,7 +28,7 @@ class MainMenu extends Component {
 
     return (
       <div id='kth-menu-container' className={classnames(!this.state.active && 'InfernoAnimation--noAnim')}>
-        <Nav>
+        <Nav className="main-m">
           <NavItem>
             <Link to='/menu/profile'>Lena</Link>
           </NavItem>

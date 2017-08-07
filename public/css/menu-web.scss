@@ -10,13 +10,13 @@ body {
         width: 100%;
         margin: 0 auto;
 
-        .nav {
+        .main-m {
             max-width: 900px;
             width: 100%;
             margin: 0 auto;
         }
 
-        .nav-item a {
+        .main-m a {
             color: #fff;
 
             &:focus {
@@ -36,12 +36,10 @@ body {
                 }
         }
 
-        #study-admin, #settings-m, #programs-m, #courses-m, #schedule-m {
+        .white-m {
             .header3 {
                 border-bottom: solid 1px #bdbcbc;
             }
-
-
             .nav-item a {
                 color: #262626;
                 &:focus {
