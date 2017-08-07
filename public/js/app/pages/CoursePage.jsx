@@ -109,6 +109,24 @@ class CoursePage extends Component {
                     </NavItem>
                   </Nav>
                 </Col>
+              <Col className="courses">
+
+                  <h4>Lärande och undervisning i högre utbildning (LH231V)</h4>
+                  <Nav vertical className="white-m">
+                    <NavItem>
+                      <NavLink href="#http://localdev.kth.se:8000/social/course/LH231V/">Kursinformation</NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="#https://kth.test.instructure.com/courses/2340">HT171</NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="#https://kth.test.instructure.com/courses/2339">HT161</NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="#https://kth.test.instructure.com/courses/2341">HT162</NavLink>
+                    </NavItem>
+                  </Nav>
+                </Col>
               </Row>
             </Container>
         </div>
