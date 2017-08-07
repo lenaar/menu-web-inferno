@@ -3,6 +3,7 @@
 import Component from 'inferno-component'
 import Nav from 'inferno-bootstrap/lib/Navigation/Nav.jsx'
 import NavItem from 'inferno-bootstrap/lib/Navigation/NavItem.jsx'
+import Badge from 'inferno-bootstrap/lib/Badge.jsx'
 import { Link } from 'inferno-router'
 import classnames from 'classnames'
 import { Animated, CrossFade } from 'inferno-animation'
@@ -47,7 +48,7 @@ class MainMenu extends Component {
             <Link to='/menu/mail'>Mail</Link>
           </NavItem>
           <NavItem>
-            <Link to='/menu/notices'>Noticer</Link>
+            <Link to='/menu/notices'> <Badge pill color="danger">10</Badge>   Noticer</Link>
           </NavItem>
           <NavItem>
             <Link to='/menu/settings'>Inställningar</Link>
