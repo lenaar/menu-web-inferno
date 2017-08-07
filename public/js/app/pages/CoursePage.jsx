@@ -40,9 +40,9 @@ class CoursePage extends Component {
               <Row>
                 <Col xs="4" className="programs" id="programs-m">
                   <h3>Mina program</h3>
+                  <h4> Civilingenjörsutbildning i datateknik(CDATE, 300hp)</h4>
                   <Nav vertical>
                     <NavItem>
-                      <NavLink disabled className="program-name" href="#">Civilingenjörsutbildning i datateknik(CDATE, 300hp)</NavLink>
                       <NavLink href="#http://localdev.kth.se:8000/social/program/cdate/" className="sub-nav">Programinformation</NavLink>
                     </NavItem>
                   </Nav>
@@ -50,23 +50,39 @@ class CoursePage extends Component {
                 <Col className="courses" id="courses-m">
                   <h3>Mina kurser</h3>
                   <a href="#">Kommande </a> | <a href="#">Aktuella</a> | <a href="#">Oavslutade</a> | <a href="#">Avslutade</a>
+                  <h4>Algebra och geometri (SF1624)</h4>
                   <Nav vertical>
                     <NavItem>
-                      <NavLink disabled className="course-name" href="#">Algebra och geometri (SF1624)</NavLink>
                       <NavLink href="#http://localdev.kth.se:8000/social/course/SF1624/" className="sub-nav">Kursinformation</NavLink>
+                    </NavItem>
+                    <NavItem>
                       <NavLink href="#https://kth.test.instructure.com/courses/2340" className="sub-nav">HT179</NavLink>
+                    </NavItem>
+                    <NavItem>
                       <NavLink href="#https://kth.test.instructure.com/courses/2339" className="sub-nav">HT173</NavLink>
+                    </NavItem>
+                    <NavItem>
                       <NavLink href="#https://kth.test.instructure.com/courses/2341" className="sub-nav">HT176</NavLink>
                     </NavItem>
+                  </Nav>
+                  <h4>Den hållbara ingenjören i trådlösa system (EQ2220)</h4>
+                  <Nav vertical>
                     <NavItem>
-                      <NavLink disabled className="course-name" href="#">Den hållbara ingenjören i trådlösa system (EQ2220)</NavLink>
                       <NavLink href="#http://localdev.kth.se:8000/social/course/EQ2220/" className="sub-nav">Kursinformation</NavLink>
                     </NavItem>
+                  </Nav>
+                  <h4>Ledarskap för säkerhet i kärnteknisk verksamhet (SH2610)</h4>
+                  <Nav vertical>
                     <NavItem>
-                      <NavLink disabled className="course-name" href="#">Ledarskap för säkerhet i kärnteknisk verksamhet (SH2610)</NavLink>
                       <NavLink href="#http://localdev.kth.se:8000/social/course/SH2610/" className="sub-nav">Kursinformation</NavLink>
+                    </NavItem>
+                    <NavItem>
                       <NavLink href="#https://kth.test.instructure.com/courses/2792" className="sub-nav">HT171 (ej publicerad)</NavLink>
+                    </NavItem>
+                    <NavItem>
                       <NavLink href="#https://kth.test.instructure.com/courses/2791" className="sub-nav">HT172 (ej publicerad)</NavLink>
+                    </NavItem>
+                    <NavItem>
                       <NavLink href="#https://kth.test.instructure.com/courses/302" className="sub-nav">HT162 (ej publicerad)</NavLink>
                     </NavItem>
                   </Nav>

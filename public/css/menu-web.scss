@@ -27,14 +27,16 @@ body {
             }
         }
 
+        #study-admin  .nav-item {
+                border-bottom: solid 1px #bdbcbc;
+                font-weight: 700;
+        }
+
         #study-admin, #settings-m, #programs-m, #courses-m, #schedule-m {
             .header3 {
                 border-bottom: solid 1px #bdbcbc;
             }
-            .nav-item {
-                border-bottom: solid 1px #bdbcbc;
-                font-weight: 700;
-            }
+
 
             .nav-item a {
                 color: #262626;
