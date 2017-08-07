@@ -27,8 +27,8 @@ body {
             }
         }
 
-        #study-admin {
-            h3 {
+        #study-admin, #settings-m {
+            .header3 {
                 border-bottom: solid 1px #bdbcbc;
             }
             .nav-item {
