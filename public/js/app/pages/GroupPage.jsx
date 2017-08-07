@@ -1,7 +1,6 @@
 'use strict'
 
 import Component from 'inferno-component'
-import {Animated} from 'inferno-animation'
 
 class GroupPage extends Component {
   constructor (props) {
@@ -12,9 +11,9 @@ class GroupPage extends Component {
     const lang = 'sv' // TODO: Pick up from actual language settings
 
     return (
-        <div className="kth-menu-content">
-          Social groupS
-        </div>
+      <div className="kth-menu-content">
+        <h2>Social group</h2>
+      </div>
     )
   }
 }

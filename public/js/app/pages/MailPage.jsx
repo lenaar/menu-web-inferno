@@ -1,7 +1,6 @@
 'use strict'
 
 import Component from 'inferno-component'
-import {Animated} from 'inferno-animation'
 
 class MailPage extends Component {
   constructor (props) {

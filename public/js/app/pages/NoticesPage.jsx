@@ -2,7 +2,7 @@
 
 import Component from 'inferno-component'
 import {Animated} from 'inferno-animation'
-import Badge from 'inferno-bootstrap/lib/Badge.jsx' // TODO: FAILS IF LOAD /MENU/NOTICES
+import Badge from 'inferno-bootstrap/lib/Badge.jsx'
 
 
 class NoticesPage extends Component {
