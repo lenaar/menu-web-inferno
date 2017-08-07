@@ -51,27 +51,40 @@ class CoursePage extends Component {
                   </Alert>
                 </Col>
               </Row>
+            </Container>
 
-              <Row>
-                <Col xs="4" className="programs">
-                  <h3>Mina program</h3>
-                  <h4> Civilingenjörsutbildning i datateknik(CDATE, 300hp)</h4>
-                  <Nav vertical className="white-m">
-                    <NavItem>
-                      <NavLink href="#http://localdev.kth.se:8000/social/program/cdate/">Programinformation</NavLink>
-                    </NavItem>
-                  </Nav>
-                </Col>
-                <Col className="courses">
-                  <h3>Mina kurser</h3>
-
-                  <Filter onChange={this.didFilter} value={this.state.filterValue}>
-                    <FilterItem value="comming">Kommande</FilterItem>
-                    <FilterItem value="current">Aktuella</FilterItem>
-                    <FilterItem value="unfinished">Oavslutade</FilterItem>
-                    <FilterItem value="finished">Avslutade</FilterItem>
-                  </Filter>
-
+              <Container>
+                <Row>
+                  <Col xs="3" className="programs">
+                    <h3>Mina program</h3>
+                    <h4> Civilingenjörsutbildning i datateknik(CDATE, 300hp)</h4>
+                    <Nav vertical className="white-m">
+                      <NavItem>
+                        <NavLink href="#http://localdev.kth.se:8000/social/program/cdate/">Programinformation</NavLink>
+                      </NavItem>
+                    </Nav>
+                  </Col>
+                </Row>
+              </Container>
+              
+              <Container>
+                <Row>
+                  <Col className="courses">
+                    <h3>Mina kurser</h3>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <Filter onChange={this.didFilter} value={this.state.filterValue}>
+                      <FilterItem value="comming">Kommande</FilterItem>
+                      <FilterItem value="current">Aktuella</FilterItem>
+                      <FilterItem value="unfinished">Oavslutade</FilterItem>
+                      <FilterItem value="finished">Avslutade</FilterItem>
+                    </Filter>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
                   <h4>Algebra och geometri (SF1624)</h4>
                   <Nav vertical className="white-m">
                     <NavItem>
