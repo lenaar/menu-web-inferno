@@ -1,6 +1,12 @@
 'use strict'
 
 import Component from 'inferno-component'
+import Container from 'inferno-bootstrap/lib/Container.jsx'
+import Row from 'inferno-bootstrap/lib/Row.jsx'
+import Col from 'inferno-bootstrap/lib/Col.jsx'
+import Nav from 'inferno-bootstrap/lib/Navigation/Nav.jsx'
+import NavItem from 'inferno-bootstrap/lib/Navigation/NavItem.jsx'
+import NavLink from 'inferno-bootstrap/lib/Navigation/NavLink.jsx'
 
 class SchedulePage extends Component {
   constructor (props) {
@@ -12,8 +18,36 @@ class SchedulePage extends Component {
 
     return (
       <div className="kth-menu-content">
-        <h2>SchedulePage</h2>
-        <p>And some more cool stuff...</p>
+         <Container id="schedule-m">
+              <Row>
+                <Col xs="4">
+                  <h3>Måndag 14 augusti</h3>
+                  <span>
+                    <p><b>Tid: 08:00-10:00</b></p>
+                    <p>Plats: <a href="#https://www.kth.se/places/room/id/31e731ab-b185-46b4-b0d3-bd2408563a3e">F1</a>, <a href="#https://www.kth.se/places/room/id/5dc45052-b5ce-4e6c-9ca6-7e22f9eee538">F2</a></p>
+                    <p><a href="#https://www.kth.se/social/program/cmast/">Civilingenjörsutbildning i maskinteknik (CMAST, 300 hp)</a></p>
+                  </span>
+                  <span>
+                    <p><b>Tid: 08:00-10:00</b></p>
+                    <p>Plats: <a href="#https://www.kth.se/places/room/id/31e731ab-b185-46b4-b0d3-bd2408563a3e">F1</a>, <a href="#https://www.kth.se/places/room/id/5dc45052-b5ce-4e6c-9ca6-7e22f9eee538">F2</a></p>
+                    <p><a href="#https://www.kth.se/social/program/cmast/">Civilingenjörsutbildning i maskinteknik (CMAST, 300 hp)</a></p>
+                  </span>
+                </Col>
+                <Col xs="4">
+                  <h3> Tisdag 15 augusti</h3>
+                  <span>
+                    <p><b>Tid: 08:00-10:00</b></p>
+                    <p>Plats: <a href="#https://www.kth.se/places/room/id/31e731ab-b185-46b4-b0d3-bd2408563a3e">F1</a>, <a href="#https://www.kth.se/places/room/id/5dc45052-b5ce-4e6c-9ca6-7e22f9eee538">F2</a></p>
+                    <p><a href="#https://www.kth.se/social/program/cmast/">Civilingenjörsutbildning i maskinteknik (CMAST, 300 hp)</a></p>
+                  </span>
+                  <span>
+                    <p><b>Tid: 08:00-10:00</b></p>
+                    <p>Plats: <a href="#https://www.kth.se/places/room/id/31e731ab-b185-46b4-b0d3-bd2408563a3e">F1</a>, <a href="#https://www.kth.se/places/room/id/5dc45052-b5ce-4e6c-9ca6-7e22f9eee538">F2</a></p>
+                    <p><a href="#https://www.kth.se/social/program/cmast/">Civilingenjörsutbildning i maskinteknik (CMAST, 300 hp)</a></p>
+                  </span>
+                </Col>
+              </Row>
+            </Container>
       </div>
     )
   }
