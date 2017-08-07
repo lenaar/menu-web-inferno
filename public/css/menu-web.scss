@@ -27,7 +27,7 @@ body {
             }
         }
 
-        #study-admin, #settings-m {
+        #study-admin, #settings-m, #programs-m, #courses-m {
             .header3 {
                 border-bottom: solid 1px #bdbcbc;
             }
@@ -47,6 +47,15 @@ body {
                 &.sub-nav {
                     font-weight: normal;
                 }
+            }
+        }
+
+        #courses-program {
+            .notice {
+                border-bottom: solid 1px #bdbcbc;
+            }
+            .programs {
+                border-right: solid 1px #bdbcbc;
             }
         }
     }

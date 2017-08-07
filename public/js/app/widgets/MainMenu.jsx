@@ -29,19 +29,19 @@ class MainMenu extends Component {
       <div id='kth-menu-container' className={classnames(!this.state.active && 'InfernoAnimation--noAnim')}>
         <Nav>
           <NavItem>
-            <Link to='/menu/profile'>Profile</Link>
+            <Link to='/menu/profile'>Lena</Link>
           </NavItem>
           <NavItem>
-            <Link to='/menu/schedule'>Schedule</Link>
+            <Link to='/menu/schedule'>Schema</Link>
           </NavItem>
           <NavItem>
-            <Link to='/menu/course'>Course&Program</Link>
+            <Link to='/menu/course'>Kurser&Program</Link>
           </NavItem>
           <NavItem>
-            <Link to='/menu/group'>Group</Link>
+            <Link to='/menu/group'>Grupper</Link>
           </NavItem>
           <NavItem>
-            <Link to='/menu/services'>Study administration</Link>
+            <Link to='/menu/services'>Studieadministrationn</Link>
           </NavItem>
           <NavItem>
             <Link to='/menu/mail'>Mail</Link>
@@ -50,7 +50,7 @@ class MainMenu extends Component {
             <Link to='/menu/notices'>Noticer</Link>
           </NavItem>
           <NavItem>
-            <Link to='/menu/settings'>Settings</Link>
+            <Link to='/menu/settings'>Inställningar</Link>
           </NavItem>
         </Nav>
         {this.props.children && <Animated prefix="PageAnimation" id="kth-menu-page-container">

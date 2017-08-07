@@ -40,7 +40,7 @@
     "express-handlebars": "^3.0.0",
     "history": "^4.6.3",
     "inferno": "^3.5.2",
-    "inferno-animation": "^0.4.4",
+    "inferno-animation": "^0.4.5",
     "inferno-bootstrap": "^0.1.2",
     "inferno-component": "^3.7.0",
     "inferno-router": "^3.7.0",
