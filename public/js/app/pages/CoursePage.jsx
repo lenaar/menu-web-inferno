@@ -12,9 +12,24 @@ import Nav from 'inferno-bootstrap/lib/Navigation/Nav.jsx'
 import NavItem from 'inferno-bootstrap/lib/Navigation/NavItem.jsx'
 import NavLink from 'inferno-bootstrap/lib/Navigation/NavLink.jsx'
 
+import { Filter, FilterItem } from '../widgets/Filter.jsx'
+
 class CoursePage extends Component {
   constructor (props) {
     super(props)
+
+    this.state = {
+      filterValue: undefined
+    }
+
+    this.didFilter = this.didFilter.bind(this)
+  }
+
+  didFilter (val) {
+    console.log('Did select: ', val)
+    this.setState({
+      filterValue: (val !== this.state.filterValue ? val : undefined)
+    })
   }
 
   render () {
@@ -49,7 +64,14 @@ class CoursePage extends Component {
                 </Col>
                 <Col className="courses" id="courses-m">
                   <h3>Mina kurser</h3>
-                  <a href="#">Kommande </a> | <a href="#">Aktuella</a> | <a href="#">Oavslutade</a> | <a href="#">Avslutade</a>
+
+                  <Filter onChange={this.didFilter} value={this.state.filterValue}>
+                    <FilterItem value="comming">Kommande</FilterItem>
+                    <FilterItem value="current">Aktuella</FilterItem>
+                    <FilterItem value="unfinished">Oavslutade</FilterItem>
+                    <FilterItem value="finished">Avslutade</FilterItem>
+                  </Filter>
+
                   <h4>Algebra och geometri (SF1624)</h4>
                   <Nav vertical>
                     <NavItem>
