@@ -22,29 +22,33 @@ class SchedulePage extends Component {
               <Row>
                 <Col xs="4">
                   <h3>Måndag 14 augusti</h3>
-                  <span>
-                    <p><b>Tid: 08:00-10:00</b></p>
-                    <p>Plats: <a href="#https://www.kth.se/places/room/id/31e731ab-b185-46b4-b0d3-bd2408563a3e">F1</a>, <a href="#https://www.kth.se/places/room/id/5dc45052-b5ce-4e6c-9ca6-7e22f9eee538">F2</a></p>
-                    <p><a href="#https://www.kth.se/social/program/cmast/">Civilingenjörsutbildning i maskinteknik (CMAST, 300 hp)</a></p>
-                  </span>
-                  <span>
-                    <p><b>Tid: 08:00-10:00</b></p>
-                    <p>Plats: <a href="#https://www.kth.se/places/room/id/31e731ab-b185-46b4-b0d3-bd2408563a3e">F1</a>, <a href="#https://www.kth.se/places/room/id/5dc45052-b5ce-4e6c-9ca6-7e22f9eee538">F2</a></p>
-                    <p><a href="#https://www.kth.se/social/program/cmast/">Civilingenjörsutbildning i maskinteknik (CMAST, 300 hp)</a></p>
-                  </span>
+                  <dl>
+                    <dt>Tid: 08:00-10:00</dt>
+                    <dd><a href="#https://www.kth.se/social/program/cmast/event/111818-2/">Upprop</a></dd>
+                    <dd>Plats: <a href="#https://www.kth.se/places/room/id/31e731ab-b185-46b4-b0d3-bd2408563a3e">F1</a>, <a href="#https://www.kth.se/places/room/id/5dc45052-b5ce-4e6c-9ca6-7e22f9eee538">F2</a></dd>
+                    <dd><a href="#https://www.kth.se/social/program/cmast/">Civilingenjörsutbildning i maskinteknik (CMAST, 300 hp)</a></dd>
+                  </dl>
+                  <dl>
+                   <dt>Tid: 08:00-10:00</dt>
+                    <dd>Omtenta</dd>
+                    <dd>Plats: <a href="#https://www.kth.se/places/room/id/31e731ab-b185-46b4-b0d3-bd2408563a3e">F1</a>, <a href="#https://www.kth.se/places/room/id/5dc45052-b5ce-4e6c-9ca6-7e22f9eee538">F2</a></dd>
+                    <dd><a href="#https://www.kth.se/social/program/cmast/">Civilingenjörsutbildning i maskinteknik (CMAST, 300 hp)</a></dd>
+                  </dl>
                 </Col>
                 <Col xs="4">
                   <h3> Tisdag 15 augusti</h3>
-                  <span>
-                    <p><b>Tid: 08:00-10:00</b></p>
-                    <p>Plats: <a href="#https://www.kth.se/places/room/id/31e731ab-b185-46b4-b0d3-bd2408563a3e">F1</a>, <a href="#https://www.kth.se/places/room/id/5dc45052-b5ce-4e6c-9ca6-7e22f9eee538">F2</a></p>
-                    <p><a href="#https://www.kth.se/social/program/cmast/">Civilingenjörsutbildning i maskinteknik (CMAST, 300 hp)</a></p>
-                  </span>
-                  <span>
-                    <p><b>Tid: 08:00-10:00</b></p>
-                    <p>Plats: <a href="#https://www.kth.se/places/room/id/31e731ab-b185-46b4-b0d3-bd2408563a3e">F1</a>, <a href="#https://www.kth.se/places/room/id/5dc45052-b5ce-4e6c-9ca6-7e22f9eee538">F2</a></p>
-                    <p><a href="#https://www.kth.se/social/program/cmast/">Civilingenjörsutbildning i maskinteknik (CMAST, 300 hp)</a></p>
-                  </span>
+                  <dl>
+                    <dt>Tid: 08:00-10:00</dt>
+                    <dd>Omtenta</dd>
+                    <dd>Plats: <a href="#https://www.kth.se/places/room/id/31e731ab-b185-46b4-b0d3-bd2408563a3e">F1</a>, <a href="#https://www.kth.se/places/room/id/5dc45052-b5ce-4e6c-9ca6-7e22f9eee538">F2</a></dd>
+                    <dd><a href="#https://www.kth.se/social/program/cmast/">Civilingenjörsutbildning i maskinteknik (CMAST, 300 hp)</a></dd>
+                  </dl>
+                  <dl>
+                    <dt>Tid: 08:00-10:00</dt>
+                    <dd>Omtenta</dd>
+                    <dd>Plats: <a href="#https://www.kth.se/places/room/id/31e731ab-b185-46b4-b0d3-bd2408563a3e">F1</a>, <a href="#https://www.kth.se/places/room/id/5dc45052-b5ce-4e6c-9ca6-7e22f9eee538">F2</a></dd>
+                    <dd><a href="#https://www.kth.se/social/program/cmast/">Civilingenjörsutbildning i maskinteknik (CMAST, 300 hp)</a></dd>
+                  </dl>
                 </Col>
               </Row>
             </Container>
