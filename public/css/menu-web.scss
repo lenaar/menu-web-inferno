@@ -30,6 +30,10 @@ body {
         #study-admin  .nav-item {
                 border-bottom: solid 1px #bdbcbc;
                 font-weight: 700;
+                
+                .sub-nav {
+                    font-weight: normal;
+                }
         }
 
         #study-admin, #settings-m, #programs-m, #courses-m, #schedule-m {
@@ -45,9 +49,6 @@ body {
                 }
                 &:hover {
                     background: #bdbcbc;
-                }
-                &.sub-nav {
-                    font-weight: normal;
                 }
             }
         }
