@@ -4,7 +4,7 @@ import Component from 'inferno-component'
 import {Animated} from 'inferno-animation'
 import Container from 'inferno-bootstrap/lib/Container.jsx'
 import Row from 'inferno-bootstrap/lib/Row.jsx'
-import { SubjectLink, Subject, SectionHeader, ColumnNav } from '../widgets/SubMenuLayout.jsx'
+import { SubjectLink, SectionHeader, ColumnNav } from '../widgets/SubMenuLayout.jsx'
 
 
 class ServicesPage extends Component {

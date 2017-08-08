@@ -4,8 +4,8 @@ import Component from 'inferno-component'
 import {Animated} from 'inferno-animation'
 import Container from 'inferno-bootstrap/lib/Container.jsx'
 import Nav from 'inferno-bootstrap/lib/Navigation/Nav.jsx'
-import NavItem from 'inferno-bootstrap/lib/Navigation/NavItem.jsx'
-import NavLink from 'inferno-bootstrap/lib/Navigation/NavLink.jsx'
+import { SubjectLink} from '../widgets/SubMenuLayout.jsx'
+
 
 class SettingsPage extends Component {
   constructor (props) {
@@ -17,32 +17,16 @@ class SettingsPage extends Component {
 
     return (
         <div className="kth-menu-content">
-          <Container id="settings-m">
+          <Container>
             <Nav vertical>
-              <NavItem>
-                <NavLink href="#https://www.kth.se/social/home/subscriptions/edit?ref=pren">Prenumerationer</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#https://www.kth.se/social/home/calendar/settings/">Exportera Mitt schema (t ex till mobiltelefon)</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#https://www.kth.se/internt/minasidor/installningar/mail.jsp">Vidarebefordran av e-post</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#https://www.kth.se/student/minasidor/installningar/tempaddress">Student: Tillfällig adress</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#https://www.kth.se/student/minasidor/installningar/phone">Student: Telefonnummer</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#https://login.sys.kth.se/peap.html">Trådlöst nätverk</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#https://login.kth.se/changePassword.jsp">Byt lösenord</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#https://www.kth.se/social/home/../accounts/logout/">Logga ut</NavLink>
-              </NavItem>
+              <SubjectLink href="#https://www.kth.se/social/home/subscriptions/edit?ref=pren">Prenumerationer </SubjectLink>
+              <SubjectLink href="#https://www.kth.se/social/home/calendar/settings/"> Exportera Mitt schema (t ex till mobiltelefon</SubjectLink>
+              <SubjectLink href="#https://www.kth.se/internt/minasidor/installningar/mail.jsp"> Vidarebefordran av e-post</SubjectLink>
+              <SubjectLink href="#https://www.kth.se/student/minasidor/installningar/tempaddress"> Student: Tillfällig adress</SubjectLink>
+              <SubjectLink href="#https://www.kth.se/student/minasidor/installningar/phone">Student: Telefonnummer </SubjectLink>
+              <SubjectLink href="#https://login.sys.kth.se/peap.html">Trådlöst nätverk </SubjectLink>
+              <SubjectLink href="#https://login.kth.se/changePassword.jsp"> Byt lösenord</SubjectLink>
+              <SubjectLink href="#https://www.kth.se/social/home/../accounts/logout/"> Logga ut</SubjectLink>
           </Nav>
         </Container>
       </div>
