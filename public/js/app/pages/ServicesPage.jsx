@@ -4,10 +4,8 @@ import Component from 'inferno-component'
 import {Animated} from 'inferno-animation'
 import Container from 'inferno-bootstrap/lib/Container.jsx'
 import Row from 'inferno-bootstrap/lib/Row.jsx'
-import Col from 'inferno-bootstrap/lib/Col.jsx'
-import Nav from 'inferno-bootstrap/lib/Navigation/Nav.jsx'
-import NavItem from 'inferno-bootstrap/lib/Navigation/NavItem.jsx'
-import NavLink from 'inferno-bootstrap/lib/Navigation/NavLink.jsx'
+import { SubjectLink, Subject, SectionHeader, ColumnNav } from '../widgets/SubMenuLayout.jsx'
+
 
 class ServicesPage extends Component {
   constructor (props) {
@@ -19,62 +17,32 @@ class ServicesPage extends Component {
 
     return (
         <div className="kth-menu-content">
-            <Container id="study-admin">
+          <Container id="study-admin">
+            <SectionHeader title="Mina studier"/>
               <Row>
-                <Col className="header3">
-                  <h3>Mina studier</h3>
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <Nav vertical>
-                    <NavItem>
-                      <NavLink href="#">Studieöversikt</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="#">Resultat</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="#">Registreringar</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="#">Tentamen</NavLink>
-                      <NavLink href="#" className="sub-nav">Kommande tentamen</NavLink>
-                      <NavLink href="#" className="sub-nav">Inscannade tentor</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="#">Kommande kurser</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="#">Intyg</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="#">Examensansökan</NavLink>
-                    </NavItem>
-                  </Nav>
-                </Col>
-                <Col>
-                  <Nav vertical>
-                    <NavItem>
-                      <NavLink href="#">Bibliotek</NavLink>
-                      <NavLink href="#" className="sub-nav">Grupprum</NavLink>
-                      <NavLink href="#" className="sub-nav">Arlig bibliometrisk uppföljning</NavLink>
-                      <NavLink href="#" className="sub-nav">Artiklar och böcker</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="#">Lediga datorer i Datorsalarna</NavLink>
-                    </NavItem>
-                    <NavItem>
-                    <NavLink href="#">Forskarstudier</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="#">UG-grupper</NavLink>
-                    </NavItem>
-                  </Nav>
-                </Col>
-              </Row>
-            </Container>
-        </div>
+                <ColumnNav>
+                  <SubjectLink href="#"> Studieöversikt</SubjectLink>
+                  <SubjectLink href="#"> Resultat</SubjectLink>
+                  <SubjectLink href="#"> Registreringar</SubjectLink>
+                  <SubjectLink href="#"> Tentamen</SubjectLink>
+                  <SubjectLink href="#" >Kommande tentamen</SubjectLink>
+                  <SubjectLink href="#" > Inscannade tentor</SubjectLink>
+                  <SubjectLink href="#">Kommande kurser</SubjectLink>
+                  <SubjectLink href="#" > Intyg</SubjectLink>
+                  <SubjectLink href="#" >Examensansökan</SubjectLink>
+                </ColumnNav>
+                <ColumnNav>
+                    <SubjectLink href="#"> Bibliotek</SubjectLink>
+                    <SubjectLink href="#"> Grupprum</SubjectLink>
+                    <SubjectLink href="#"> Arlig bibliometrisk uppföljning </SubjectLink>
+                    <SubjectLink href="#"> Artiklar och böcker </SubjectLink>
+                    <SubjectLink href="#">Lediga datorer i Datorsalarna </SubjectLink>
+                    <SubjectLink href="#">Forskarstudier </SubjectLink>
+                    <SubjectLink href="#">UG-grupper </SubjectLink>
+              </ColumnNav>
+            </Row>
+        </Container>
+      </div>
     )
   }
 }

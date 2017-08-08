@@ -8,11 +8,10 @@ import Col from 'inferno-bootstrap/lib/Col.jsx'
 import Alert from 'inferno-bootstrap/lib/Alert.jsx'
 import Button from 'inferno-bootstrap/lib/Button.jsx'
 import ButtonGroup from 'inferno-bootstrap/lib/ButtonGroup.jsx'
-import Nav from 'inferno-bootstrap/lib/Navigation/Nav.jsx'
-import NavItem from 'inferno-bootstrap/lib/Navigation/NavItem.jsx'
-import NavLink from 'inferno-bootstrap/lib/Navigation/NavLink.jsx'
 
 import { Filter, FilterHeader, FilterItem } from '../widgets/Filter.jsx'
+import { SubjectLink, Subject, SubSection, SectionHeader } from '../widgets/SubMenuLayout.jsx'
+
 
 function Notices ({ status, points }) {
   return (
@@ -31,45 +30,6 @@ function Notices ({ status, points }) {
         </Col>
       </Row>
     </Container>
-  )
-}
-
-function SubjectLink ({href, children}) {
-  return (
-    <NavItem>
-      <NavLink href={href}>{children}</NavLink>
-    </NavItem>
-  )
-}
-
-function Subject ({title, children}) {
-  return (
-    <div>
-      <h4>{title}</h4>
-      <Nav  vertical className="white-m">
-        {children}
-      </Nav>
-    </div>
-  )
-}
-
-function SubSection ({children}) {
-  return (
-    <Row>
-      <Col>
-        {children}  
-      </Col>
-    </Row>
-  )
-}
-
-function SectionHeader ({title}) {
-  return (
-    <Row>
-      <Col>
-        <h3>{title}</h3>  
-      </Col>
-    </Row>
   )
 }
 
