@@ -53,6 +53,26 @@ function Subject ({title, children}) {
   )
 }
 
+function SubSection ({children}) {
+  return (
+    <Row>
+      <Col>
+        {children}  
+      </Col>
+    </Row>
+  )
+}
+
+function SectionHeader ({title}) {
+  return (
+    <Row>
+      <Col>
+        <h3>{title}</h3>  
+      </Col>
+    </Row>
+  )
+}
+
 class CoursePage extends Component {
   constructor (props) {
     super(props)
@@ -79,28 +99,18 @@ class CoursePage extends Component {
             <Notices status="open" points={50} />
 
               <Container className="programs">
-                <Row>
-                  <Col>
-                    <h3>Mina program</h3>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col>
+                <SectionHeader title="Mina program"/>
+
+                <SubSection>
                     <Subject title="Civilingenjörsutbildning i datateknik(CDATE, 300hp)">
                       <SubjectLink href="http://localdev.kth.se:8000/social/program/cdate/">Programinformation</SubjectLink>
                     </Subject>
-                  </Col>
-                </Row>
+                </SubSection>
               </Container>
               
               <Container className="courses">
-                <Row>
-                  <Col>
-                    <h3>Mina kurser</h3>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col >
+                <SectionHeader title="Mina kurser"/>
+                <SubSection>
                     <Filter onChange={this.didFilter} value={this.state.filterValue}>
                       <FilterHeader>Filtrera:</FilterHeader>
                       <FilterItem value="comming">Kommande</FilterItem>
@@ -108,10 +118,10 @@ class CoursePage extends Component {
                       <FilterItem value="unfinished">Oavslutade</FilterItem>
                       <FilterItem value="finished">Avslutade</FilterItem>
                     </Filter>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col>
+                </SubSection>
+              <Row>
+                <Col>
+                <SubSection>
                     <Subject title="Algebra och geometri (SF1624)">
                       <SubjectLink href="http://localdev.kth.se:8000/social/course/SF1624/">Kursinformation</SubjectLink>
                       <SubjectLink href="https://kth.test.instructure.com/courses/2340">HT179</SubjectLink>
@@ -129,16 +139,19 @@ class CoursePage extends Component {
                       <SubjectLink href="https://kth.test.instructure.com/courses/2791">HT172 (ej publicerad)</SubjectLink>
                       <SubjectLink href="https://kth.test.instructure.com/courses/302">HT162 (ej publicerad)</SubjectLink>
                     </Subject>
-                </Col>
-                <Col>
+                </SubSection>
+              </Col>
+              <Col>
+                <SubSection>
                   <Subject title="Lärande och undervisning i högre utbildning (LH231V)">
                     <SubjectLink href="http://localdev.kth.se:8000/social/course/LH231V/">Kursinformation</SubjectLink>
                     <SubjectLink href="https://kth.test.instructure.com/courses/2340">HT171</SubjectLink>
                     <SubjectLink href="https://kth.test.instructure.com/courses/2339">HT161</SubjectLink>
                     <SubjectLink href="https://kth.test.instructure.com/courses/2341">HT162</SubjectLink>
                   </Subject>
-                </Col>
-              </Row>
+              </SubSection>
+            </Col>
+            </Row>
             </Container>
         </div>
     )
