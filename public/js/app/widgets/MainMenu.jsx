@@ -8,6 +8,13 @@ import { Link } from 'inferno-router'
 import classnames from 'classnames'
 import { Animated, CrossFade } from 'inferno-animation'
 
+function MenuLink ({href, title}) {
+  return (
+    <NavItem>
+      <Link className="nav-link" to={href}>{title}</Link>
+    </NavItem>
+  )
+}
 class MainMenu extends Component {
   constructor (props) {
     super(props)
@@ -29,30 +36,14 @@ class MainMenu extends Component {
     return (
       <div id='kth-menu-container' className={classnames(!this.state.active && 'InfernoAnimation--noAnim')}>
         <Nav className="main-m">
-          <NavItem>
-            <Link className="nav-link" to='/menu/profile'>Lena</Link>
-          </NavItem>
-          <NavItem>
-            <Link className="nav-link" to='/menu/schedule'>Schema</Link>
-          </NavItem>
-          <NavItem>
-            <Link className="nav-link" to='/menu/course'>Kurser&Program</Link>
-          </NavItem>
-          <NavItem>
-            <Link className="nav-link" to='/menu/group'>Grupper</Link>
-          </NavItem>
-          <NavItem>
-            <Link className="nav-link" to='/menu/services'>Studieadministrationn</Link>
-          </NavItem>
-          <NavItem>
-            <Link className="nav-link" to='/menu/mail'>Mail</Link>
-          </NavItem>
-          <NavItem>
-            <Link className="nav-link" to='/menu/notices'> <Badge pill color="danger">10</Badge>   Noticer</Link>
-          </NavItem>
-          <NavItem>
-            <Link className="nav-link" to='/menu/settings'>Inställningar</Link>
-          </NavItem>
+          <MenuLink href="/menu/profile" title="Lena" />
+          <MenuLink href="/menu/schedule" title="Schema" />
+          <MenuLink href="/menu/course" title="Kurser&Program" />
+          <MenuLink href="/menu/group" title="Grupper" />
+          <MenuLink href="/menu/services" title="Studieadministrationn" />
+          <MenuLink href="/menu/mail" title="Mail" />
+          <MenuLink href="/menu/notices" title="Noticer" /> 
+          <MenuLink href="/menu/settings" title="Inställningar" />
         </Nav>
         {this.props.children && <Animated prefix="PageAnimation" id="kth-menu-page-container">
           <CrossFade className="kth-menu-page" prefix="MenuCrossFade--Animation">

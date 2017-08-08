@@ -1,0 +1,77 @@
+import Container from 'inferno-bootstrap/lib/Container.jsx'
+import Nav from 'inferno-bootstrap/lib/Navigation/Nav.jsx'
+import NavItem from 'inferno-bootstrap/lib/Navigation/NavItem.jsx'
+import NavLink from 'inferno-bootstrap/lib/Navigation/NavLink.jsx'
+import Row from 'inferno-bootstrap/lib/Row.jsx'
+import Col from 'inferno-bootstrap/lib/Col.jsx'
+
+export function SubjectLink ({href, children}) {
+  return (
+    <NavItem>
+      <NavLink href={href}>{children}</NavLink>
+    </NavItem>
+  )
+}
+
+export function Subject ({title, children}) {
+  return (
+    <div>
+      <h4>{title}</h4>
+      <Nav  vertical className="white-m">
+        {children}
+      </Nav>
+    </div>
+  )
+}
+
+
+
+export function SectionHeader ({title}) {
+  return (
+    <Row>
+      <Col>
+        <h3>{title}</h3>  
+      </Col>
+    </Row>
+  )
+}
+export function SubSection ({children}) {
+  return (
+    <Row>
+      <Col>
+        {children}  
+      </Col>
+    </Row>
+  )
+}
+export function ColumnNav ({children}) { 
+    return (
+    <Col>
+        <Nav vertical>
+            {children}          
+        </Nav>
+    </Col>
+    )
+}
+
+export function SubjContainer ({className, title, children}){
+  return (
+    <Container className={className}>
+      <SectionHeader title={title}/>
+      <SubSection>
+        {children}
+      </SubSection>
+    </Container>
+  )
+}
+
+export function ContainerRow ({className, title, children}){
+  return (
+    <Container className={className}>
+      <SectionHeader title={title}/>
+      <Row>
+        {children}
+      </Row>
+    </Container>
+  )
+}

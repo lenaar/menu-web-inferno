@@ -10,7 +10,7 @@ import Button from 'inferno-bootstrap/lib/Button.jsx'
 import ButtonGroup from 'inferno-bootstrap/lib/ButtonGroup.jsx'
 
 import { Filter, FilterHeader, FilterItem } from '../widgets/Filter.jsx'
-import { SubjectLink, Subject, SubSection, SectionHeader } from '../widgets/SubMenuLayout.jsx'
+import { SubjectLink, Subject, SubjContainer, ContainerRow } from '../widgets/SubMenuLayout.jsx'
 
 
 function Notices ({ status, points }) {
@@ -30,6 +30,23 @@ function Notices ({ status, points }) {
         </Col>
       </Row>
     </Container>
+  )
+}
+
+function ProgramBase ({title, href}) {
+  return(
+  <Subject title={title}>
+    <SubjectLink href={href}>Programinformation</SubjectLink>
+  </Subject>
+  )
+}
+
+function CourseBase ({title, href, children}) {
+  return(
+  <Subject title={title}>
+    <SubjectLink href={href}>Kursinformation</SubjectLink>
+    {children}
+  </Subject>
   )
 }
 
@@ -57,62 +74,46 @@ class CoursePage extends Component {
     return (
         <div className="kth-menu-content">
             <Notices status="open" points={50} />
+            
+            <SubjContainer className="programs" title="Mina program">
+              <ProgramBase title="Civilingenjörsutbildning i datateknik(CDATE, 300hp)" href="http://localdev.kth.se:8000/social/program/cdate/"/>
+            </SubjContainer>
 
-              <Container className="programs">
-                <SectionHeader title="Mina program"/>
+            <SubjContainer className="courses" title="Mina kurser">
+              <Filter onChange={this.didFilter} value={this.state.filterValue}>
+                <FilterHeader>Filtrera:</FilterHeader>
+                <FilterItem value="comming">Kommande</FilterItem>
+                <FilterItem value="current">Aktuella</FilterItem>
+                <FilterItem value="unfinished">Oavslutade</FilterItem>
+                <FilterItem value="finished">Avslutade</FilterItem>
+              </Filter>
+            </SubjContainer>
 
-                <SubSection>
-                    <Subject title="Civilingenjörsutbildning i datateknik(CDATE, 300hp)">
-                      <SubjectLink href="http://localdev.kth.se:8000/social/program/cdate/">Programinformation</SubjectLink>
-                    </Subject>
-                </SubSection>
-              </Container>
-              
-              <Container className="courses">
-                <SectionHeader title="Mina kurser"/>
-                <SubSection>
-                    <Filter onChange={this.didFilter} value={this.state.filterValue}>
-                      <FilterHeader>Filtrera:</FilterHeader>
-                      <FilterItem value="comming">Kommande</FilterItem>
-                      <FilterItem value="current">Aktuella</FilterItem>
-                      <FilterItem value="unfinished">Oavslutade</FilterItem>
-                      <FilterItem value="finished">Avslutade</FilterItem>
-                    </Filter>
-                </SubSection>
-              <Row>
-                <Col>
-                <SubSection>
-                    <Subject title="Algebra och geometri (SF1624)">
-                      <SubjectLink href="http://localdev.kth.se:8000/social/course/SF1624/">Kursinformation</SubjectLink>
+            <ContainerRow className="current-courses">
+                  <Col>
+                    <CourseBase title="Algebra och geometri (SF1624)" href="http://localdev.kth.se:8000/social/course/EQ2220/">
                       <SubjectLink href="https://kth.test.instructure.com/courses/2340">HT179</SubjectLink>
                       <SubjectLink href="https://kth.test.instructure.com/courses/2339">HT173</SubjectLink>
                       <SubjectLink href="https://kth.test.instructure.com/courses/2341">HT176</SubjectLink>
-                    </Subject>
-                    
-                    <Subject title="Den hållbara ingenjören i trådlösa system (EQ2220)">
-                      <SubjectLink href="http://localdev.kth.se:8000/social/course/EQ2220/">Kursinformation</SubjectLink>
-                    </Subject>
+                    </CourseBase>
 
-                    <Subject title="Ledarskap för säkerhet i kärnteknisk verksamhet (SH2610)">
-                      <SubjectLink href="http://localdev.kth.se:8000/social/course/SH2610/">Kursinformation</SubjectLink>
+                    <CourseBase title="Den hållbara ingenjören i trådlösa system (EQ2220)" href="http://localdev.kth.se:8000/social/course/EQ2220/">
+                    </CourseBase>
+
+                    <CourseBase title="Ledarskap för säkerhet i kärnteknisk verksamhet (SH2610)" href="http://localdev.kth.se:8000/social/course/SH2610/">
                       <SubjectLink href="https://kth.test.instructure.com/courses/2792">HT171 (ej publicerad)</SubjectLink>
                       <SubjectLink href="https://kth.test.instructure.com/courses/2791">HT172 (ej publicerad)</SubjectLink>
                       <SubjectLink href="https://kth.test.instructure.com/courses/302">HT162 (ej publicerad)</SubjectLink>
-                    </Subject>
-                </SubSection>
-              </Col>
-              <Col>
-                <SubSection>
-                  <Subject title="Lärande och undervisning i högre utbildning (LH231V)">
-                    <SubjectLink href="http://localdev.kth.se:8000/social/course/LH231V/">Kursinformation</SubjectLink>
+                    </CourseBase>
+                </Col>
+                <Col>
+                  <CourseBase title="Lärande och undervisning i högre utbildning (LH231V)" href="http://localdev.kth.se:8000/social/course/LH231V/">
                     <SubjectLink href="https://kth.test.instructure.com/courses/2340">HT171</SubjectLink>
                     <SubjectLink href="https://kth.test.instructure.com/courses/2339">HT161</SubjectLink>
                     <SubjectLink href="https://kth.test.instructure.com/courses/2341">HT162</SubjectLink>
-                  </Subject>
-              </SubSection>
-            </Col>
-            </Row>
-            </Container>
+                  </CourseBase>
+              </Col>
+            </ContainerRow>
         </div>
     )
   }

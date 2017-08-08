@@ -17,7 +17,7 @@ class ServicesPage extends Component {
 
     return (
         <div className="kth-menu-content">
-          <Container id="study-admin">
+          <Container>
             <SectionHeader title="Mina studier"/>
               <Row>
                 <ColumnNav>
