@@ -56,6 +56,11 @@ body {
         #courses-program{
                 border-bottom: solid 1px #bdbcbc;
         }
+        .alert-section {
+            .message {
+                margin-top: 1.5em;
+            }
+        }
         // .programs {
         //         border-bottom: solid 1px #bdbcbc;
         //         width: 30%;
@@ -66,6 +71,7 @@ body {
         //     width: 65%;
         //     display: inline-block;
         // }
+
     }
 
     #kth-menu-page-container {

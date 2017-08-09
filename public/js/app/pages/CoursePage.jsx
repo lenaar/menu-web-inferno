@@ -24,8 +24,10 @@ function Notices ({ status, points }) {
           </ButtonGroup>
         </Col>
         <Col className="alert-section">
-          <Alert color="warning">
-            {status === 'open' ? 'Registrering öppen' : 'Registrering stängd'}
+          <Alert color="warning" className="system-message" onClose role="alert">
+            <span class="message">
+              {status === 'open' ? 'Registrering öppen' : 'Registrering stängd'}
+            </span>
           </Alert>
         </Col>
       </Row>
