@@ -5,6 +5,8 @@ import {Animated} from 'inferno-animation'
 import Container from 'inferno-bootstrap/lib/Container.jsx'
 import Row from 'inferno-bootstrap/lib/Row.jsx'
 import Col from 'inferno-bootstrap/lib/Col.jsx'
+import Progress from 'inferno-bootstrap/lib/Progress.jsx'
+
 import Alert from 'inferno-bootstrap/lib/Alert.jsx'
 import Button from 'inferno-bootstrap/lib/Button.jsx'
 import ButtonGroup from 'inferno-bootstrap/lib/ButtonGroup.jsx'
@@ -17,11 +19,12 @@ function Notices ({ status, points }) {
   return (
     <Container id="courses-program">
       <Row className="notice">
-        <Col xs="4" className="progress-section">
-          <ButtonGroup>
-            <Button color="primary">{ points + 'Hp'}</Button>
-            <Button>Studieresultat</Button>
-          </ButtonGroup>
+        <Col xs="5" className="progress-section">
+          <div className="text-center">{points + 'Hp'}</div>
+            <Progress value={points} />  
+          <div className="text-center"> 
+            <Button className="result">Studieresultat</Button>
+          </div>
         </Col>
         <Col className="alert-section">
           <Alert color="warning" className="system-message" onClose role="alert">
