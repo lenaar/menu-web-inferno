@@ -13,7 +13,7 @@ export function SubjectLink ({href, children}) {
   )
 }
 
-export function Subject ({title, children}) {
+export function SubjectNav ({title, children}) {
   return (
     <div>
       <h4>{title}</h4>
@@ -26,24 +26,16 @@ export function Subject ({title, children}) {
 
 
 
-export function SectionHeader ({title}) {
+export function SectionHeader ({title, children}) {
   return (
     <Row>
       <Col>
-        <h3>{title}</h3>  
+        <h3>{title} </h3>  {children}
       </Col>
     </Row>
   )
 }
-export function SubSection ({children}) {
-  return (
-    <Row>
-      <Col>
-        {children}  
-      </Col>
-    </Row>
-  )
-}
+
 export function ColumnNav ({children}) { 
     return (
     <Col>
@@ -52,17 +44,6 @@ export function ColumnNav ({children}) {
         </Nav>
     </Col>
     )
-}
-
-export function SubjContainer ({className, title, children}){
-  return (
-    <Container className={className}>
-      <SectionHeader title={title}/>
-      <SubSection>
-        {children}
-      </SubSection>
-    </Container>
-  )
 }
 
 export function ContainerRow ({className, title, children}){
