@@ -5,10 +5,10 @@ import NavLink from 'inferno-bootstrap/lib/Navigation/NavLink.jsx'
 import Row from 'inferno-bootstrap/lib/Row.jsx'
 import Col from 'inferno-bootstrap/lib/Col.jsx'
 
-export function SubjectLink ({href, children}) {
+export function SubjectLink ({href, className, children}) {
   return (
     <NavItem>
-      <NavLink href={href}>{children}</NavLink>
+      <NavLink href={href} className={className}>{children}</NavLink>
     </NavItem>
   )
 }

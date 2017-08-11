@@ -59,7 +59,7 @@ function ProgramBase ({title, href}) {
 function CourseBase ({title, href, children}) {
   return(
   <SubjectNav title={title}>
-    <SubjectLink href={href}>Kursinformation</SubjectLink>
+    <SubjectLink  href={href}>Kursinformation</SubjectLink>
     {children} 
   </SubjectNav>
   )
@@ -70,9 +70,9 @@ function CourseSection({filter}) { //current, finished, unfinished, coming cours
     <Row>
       <Col>
         <CourseBase title="Algebra och geometri (SF1624)" href="http://localdev.kth.se:8000/social/course/EQ2220/">
-          <SubjectLink href="https://kth.test.instructure.com/courses/2340">HT179</SubjectLink>
-          <SubjectLink href="https://kth.test.instructure.com/courses/2339">HT173</SubjectLink>
-          <SubjectLink href="https://kth.test.instructure.com/courses/2341">HT176</SubjectLink>
+          <SubjectLink href="https://kth.test.instructure.com/courses/2340" className="course-material">HT179</SubjectLink>
+          <SubjectLink href="https://kth.test.instructure.com/courses/2339" className="course-material">HT173</SubjectLink>
+          <SubjectLink href="https://kth.test.instructure.com/courses/2341" className="course-material">HT176</SubjectLink>
         </CourseBase>
 
         <CourseBase title="Den hållbara ingenjören i trådlösa system (EQ2220)" href="http://localdev.kth.se:8000/social/course/EQ2220/">
