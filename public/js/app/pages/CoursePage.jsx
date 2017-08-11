@@ -58,7 +58,7 @@ function ProgramBase ({title, href}) {
 
 function CourseBase ({title, href, children}) {
   return(
-  <SubjectNav title={title}>
+  <SubjectNav title={title} cardType="course-card">
     <SubjectLink  href={href}>Kursinformation</SubjectLink>
     {children} 
   </SubjectNav>

@@ -13,9 +13,9 @@ export function SubjectLink ({href, className, children}) {
   )
 }
 
-export function SubjectNav ({title, children}) {
+export function SubjectNav ({title, cardType, children}) {
   return (
-    <div>
+    <div className={cardType}>
       <h4>{title}</h4>
       <Nav  vertical className="white-m">
         {children}
