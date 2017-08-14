@@ -24,6 +24,28 @@ export function SubjectNav ({title, cardType, children}) {
   )
 }
 
+export function CourseNav ({title, icon, children}) {
+  return (
+    <div className="course-card big-icon">
+      <i className={icon}></i>
+      <span>
+        <h4>{title}</h4>
+        <Nav  vertical className="white-m">
+          {children}
+        </Nav>
+      </span>
+    </div>
+  )
+}
+
+export function CourseMaterialLink ({href, status, children}) {
+  return (
+    <NavItem>
+      <NavLink href={href} className="course-material"><i class="icon-doc-text"></i>{children}</NavLink>
+    </NavItem>
+  )
+}
+
 
 
 export function SectionHeader ({title, children}) {

@@ -12,7 +12,7 @@ import Button from 'inferno-bootstrap/lib/Button.jsx'
 import ButtonGroup from 'inferno-bootstrap/lib/ButtonGroup.jsx'
 
 import { Filter, FilterHeader, FilterItem } from '../widgets/Filter.jsx'
-import { SubjectLink, SectionHeader, SubjectNav} from '../widgets/SubMenuLayout.jsx'
+import { SubjectLink, SectionHeader, SubjectNav, CourseNav, CourseMaterialLink} from '../widgets/SubMenuLayout.jsx'
 
 
 function Notices ({ status, points }) {
@@ -56,12 +56,12 @@ function ProgramBase ({title, href}) {
   )
 }
 
-function CourseBase ({title, href, children}) {
+function CourseBase ({title, href, icon, children}) {
   return(
-  <SubjectNav title={title} cardType="course-card">
+  <CourseNav title={title} icon={icon}>
     <SubjectLink  href={href}>Kursinformation</SubjectLink>
     {children} 
-  </SubjectNav>
+  </CourseNav>
   )
 }
 
@@ -69,26 +69,26 @@ function CourseSection({filter}) { //current, finished, unfinished, coming cours
   return (
     <Row>
       <Col>
-        <CourseBase title="Algebra och geometri (SF1624)" href="http://localdev.kth.se:8000/social/course/EQ2220/">
-          <SubjectLink href="https://kth.test.instructure.com/courses/2340" className="course-material">HT179</SubjectLink>
-          <SubjectLink href="https://kth.test.instructure.com/courses/2339" className="course-material">HT173</SubjectLink>
-          <SubjectLink href="https://kth.test.instructure.com/courses/2341" className="course-material">HT176</SubjectLink>
+        <CourseBase title="Algebra och geometri (SF1624)" href="http://localdev.kth.se:8000/social/course/EQ2220/" icon="course-pie-grey-50">
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2340">HT179</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2339">HT173</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2341">HT176</CourseMaterialLink>
         </CourseBase>
 
-        <CourseBase title="Den hållbara ingenjören i trådlösa system (EQ2220)" href="http://localdev.kth.se:8000/social/course/EQ2220/">
+        <CourseBase title="Den hållbara ingenjören i trådlösa system (EQ2220)" href="http://localdev.kth.se:8000/social/course/EQ2220/" icon="course-pie-grey-25">
         </CourseBase>
 
-        <CourseBase title="Ledarskap för säkerhet i kärnteknisk verksamhet (SH2610)" href="http://localdev.kth.se:8000/social/course/SH2610/">
-          <SubjectLink href="https://kth.test.instructure.com/courses/2792">HT171 (ej publicerad)</SubjectLink>
-          <SubjectLink href="https://kth.test.instructure.com/courses/2791">HT172 (ej publicerad)</SubjectLink>
-          <SubjectLink href="https://kth.test.instructure.com/courses/302">HT162 (ej publicerad)</SubjectLink>
+        <CourseBase title="Ledarskap för säkerhet i kärnteknisk verksamhet (SH2610)" href="http://localdev.kth.se:8000/social/course/SH2610/" icon="course-pie-grey-75">
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2792">HT171 (ej publicerad)</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2791">HT172 (ej publicerad)</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/302">HT162 (ej publicerad)</CourseMaterialLink>
         </CourseBase>
       </Col>
       <Col>
-          <CourseBase title="Lärande och undervisning i högre utbildning (LH231V)" href="http://localdev.kth.se:8000/social/course/LH231V/">
-            <SubjectLink href="https://kth.test.instructure.com/courses/2340">HT171</SubjectLink>
-            <SubjectLink href="https://kth.test.instructure.com/courses/2339">HT161</SubjectLink>
-            <SubjectLink href="https://kth.test.instructure.com/courses/2341">HT162</SubjectLink>
+          <CourseBase title="Lärande och undervisning i högre utbildning (LH231V)" href="http://localdev.kth.se:8000/social/course/LH231V/" icon="course-pie-grey-75">
+            <CourseMaterialLink href="https://kth.test.instructure.com/courses/2340">HT171</CourseMaterialLink>
+            <CourseMaterialLink href="https://kth.test.instructure.com/courses/2339">HT161</CourseMaterialLink>
+            <CourseMaterialLink href="https://kth.test.instructure.com/courses/2341">HT162</CourseMaterialLink>
           </CourseBase>
       </Col>
     </Row>
