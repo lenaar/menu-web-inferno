@@ -15,6 +15,10 @@ import { Filter, FilterHeader, FilterItem } from '../widgets/Filter.jsx'
 import { SubjectLink, SectionHeader, SubjectNav, CourseNav, CourseMaterialLink} from '../widgets/SubMenuLayout.jsx'
 
 
+//card imports
+import Card from 'inferno-bootstrap/lib/Card/Card.jsx'
+import CardBlock from 'inferno-bootstrap/lib/Card/CardBlock.jsx'
+
 function Notices ({ status, points }) {
   return (
     <Container id="courses-program">
@@ -50,18 +54,26 @@ function ContainerRow ({className, children}){
 
 function ProgramBase ({title, href}) {
   return(
-  <SubjectNav title={title}>
-    <SubjectLink href={href}>Programinformation</SubjectLink>
-  </SubjectNav>
+  <Card>
+    <CardBlock>
+      <SubjectNav title={title}>
+        <SubjectLink href={href}>Programinformation</SubjectLink>
+      </SubjectNav>
+    </CardBlock>
+  </Card>
   )
 }
 
 function CourseBase ({title, href, icon, children}) {
   return(
-  <CourseNav title={title} icon={icon}>
-    <SubjectLink  href={href}>Kursinformation</SubjectLink>
-    {children} 
-  </CourseNav>
+    <Card>
+      <CardBlock>
+        <CourseNav title={title} icon={icon}>
+          <SubjectLink  href={href}>Kursinformation</SubjectLink>
+          {children} 
+        </CourseNav>
+      </CardBlock>
+    </Card>
   )
 }
 
@@ -85,11 +97,11 @@ function CourseSection({filter}) { //current, finished, unfinished, coming cours
         </CourseBase>
       </Col>
       <Col>
-          <CourseBase title="Lärande och undervisning i högre utbildning (LH231V)" href="http://localdev.kth.se:8000/social/course/LH231V/" icon="course-pie-grey-75">
-            <CourseMaterialLink href="https://kth.test.instructure.com/courses/2340">HT171</CourseMaterialLink>
-            <CourseMaterialLink href="https://kth.test.instructure.com/courses/2339">HT161</CourseMaterialLink>
-            <CourseMaterialLink href="https://kth.test.instructure.com/courses/2341">HT162</CourseMaterialLink>
-          </CourseBase>
+        <CourseBase title="Lärande och undervisning i högre utbildning (LH231V)" href="http://localdev.kth.se:8000/social/course/LH231V/" icon="course-pie-grey-75">
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2340">HT171</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2339">HT161</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2341">HT162</CourseMaterialLink>
+        </CourseBase>    
       </Col>
     </Row>
   )
