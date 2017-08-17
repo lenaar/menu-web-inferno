@@ -101,7 +101,14 @@ function CourseSection({filter}) { //current, finished, unfinished, coming cours
           <CourseMaterialLink href="https://kth.test.instructure.com/courses/2340">HT171</CourseMaterialLink>
           <CourseMaterialLink href="https://kth.test.instructure.com/courses/2339">HT161</CourseMaterialLink>
           <CourseMaterialLink href="https://kth.test.instructure.com/courses/2341">HT162</CourseMaterialLink>
-        </CourseBase>    
+        </CourseBase> 
+        <CourseBase title="Algebra och geometri (SF1624)" href="http://localdev.kth.se:8000/social/course/EQ2220/" icon="course-pie-grey-50">
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2340">HT179</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2339">HT173</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2341">HT176</CourseMaterialLink>
+        </CourseBase>
+        <CourseBase title="Den hållbara ingenjören i trådlösa system (EQ2220)" href="http://localdev.kth.se:8000/social/course/EQ2220/" icon="course-pie-grey-25">
+        </CourseBase>
       </Col>
     </Row>
   )
