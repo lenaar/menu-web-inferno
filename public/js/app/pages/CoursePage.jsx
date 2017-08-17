@@ -55,7 +55,7 @@ function ContainerRow ({className, children}){
 function ProgramBase ({title, href}) {
   return(
   <Card>
-    <CardBlock>
+    <CardBlock className="program-card">
       <SubjectNav title={title}>
         <SubjectLink href={href}>Programinformation</SubjectLink>
       </SubjectNav>
