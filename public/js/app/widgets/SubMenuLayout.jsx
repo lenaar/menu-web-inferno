@@ -27,13 +27,13 @@ export function SubjectNav ({title, cardType, children}) {
 export function CourseNav ({title, icon, children}) {
   return (
     <div className="course-card big-icon">
-      <i className={icon}></i>
       <span>
         <h4>{title}</h4>
         <Nav  vertical className="white-m">
           {children}
         </Nav>
       </span>
+      <i className={icon}></i>
     </div>
   )
 }
