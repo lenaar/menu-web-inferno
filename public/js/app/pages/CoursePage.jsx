@@ -24,11 +24,8 @@ function Notices ({ status, points }) {
     <Container id="courses-program">
       <Row className="notice">
         <Col xs="5" className="progress-section">
-          <div className="text-center">{points + 'Hp'}</div>
-            <Progress value={points} />  
-          <div className="text-center"> 
-            <Button className="result">Studieresultat</Button>
-          </div>
+          <div className="text-center"><a href="#result">{points + 'Hp'} Studieresultat</a></div>
+          <Progress value={points} />
         </Col>
         <Col className="alert-section">
           <Alert color="warning" onClose role="alert">
