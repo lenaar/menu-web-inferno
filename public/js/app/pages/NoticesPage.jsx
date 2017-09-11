@@ -27,15 +27,15 @@ class NoticesPage extends Component {
             </CardBlock>
           </Card>
           <Card className="notices">
-            <CardHeader>Information markerad som viktig eller brådskande</CardHeader>
+            <CardHeader>Deadlines</CardHeader>
             <CardBlock>
-              <p>2017-08-20 - 2017-09-05 | <a href="#register">Du har registreringar att göra. Registrering är oppen</a></p>
+              <p>2017-08-20 - 2017-09-05 | <a href="#deadline">Skicka in uppgifter.</a></p>
             </CardBlock>
           </Card>
           <Card className="notices">
-            <CardHeader>Deadlines</CardHeader>
+            <CardHeader>Information markerad som viktig eller brådskande</CardHeader>
             <CardBlock>
-              <p>2017-08-20 - 2017-09-05 | <a href="#register">Du har registreringar att göra. Registrering är oppen</a></p>
+              <p>2017-08-20 - 2017-09-05 | <a href="#news">Du har änmalt. Snart kommer registrering att oppnas</a></p>
             </CardBlock>
           </Card>
           <h4><a href="#schema">Mitt schema </a><Badge pill color="primary">10</Badge></h4>
