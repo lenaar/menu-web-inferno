@@ -31,7 +31,7 @@ function Notices ({ status, points }) {
           </div>
         </Col>
         <Col className="alert-section">
-          <Alert color="warning" className="system-message" onClose role="alert">
+          <Alert color="warning" onClose role="alert">
             <span class="message">
               {status === 'open' ? 'Registrering öppen' : 'Registrering stängd'}
             </span>
@@ -119,7 +119,6 @@ function CourseFilter({userType, didFilter, state}) { //todo: depends on teacher
       <Row>
         <Col>
         <Filter onChange={didFilter} value={state}>
-          <FilterHeader>Filtrera:</FilterHeader>
           <FilterItem value="comming">Kommande</FilterItem>
           <FilterItem value="current">Aktuella</FilterItem>
           <FilterItem value="unfinished">Oavslutade</FilterItem>
