@@ -6,10 +6,7 @@ import Container from 'inferno-bootstrap/lib/Container.jsx'
 import Row from 'inferno-bootstrap/lib/Row.jsx'
 import Col from 'inferno-bootstrap/lib/Col.jsx'
 import Progress from 'inferno-bootstrap/lib/Progress.jsx'
-
 import Alert from 'inferno-bootstrap/lib/Alert.jsx'
-import Button from 'inferno-bootstrap/lib/Button.jsx'
-import ButtonGroup from 'inferno-bootstrap/lib/ButtonGroup.jsx'
 
 import { Filter, FilterHeader, FilterItem } from '../widgets/Filter.jsx'
 import { SubjectLink, SectionHeader, SubjectNav, CourseNav, CourseMaterialLink} from '../widgets/SubMenuLayout.jsx'
@@ -23,12 +20,15 @@ function ProgramProgress ({points}) {
     return (
       <Col xs="5" className="progress-section">
         <div className="text-center"><a href="#result">{points + 'Hp'} Studieresultat</a></div>
-        <Progress value={points} color="success"/>
+        <Progress multi>
+          <Progress bar value={points} color="success"/>
+          <Progress bar value={points} color="warning"/>
+        </Progress>
       </Col>
     )
 }
 
-function Notices ({ status, points }) {
+function Notices ({ status }) {
   return (
     <Container id="courses-program">
       <Row className="notice">
@@ -135,7 +135,7 @@ function ProgramContainer () {
   return (
   <Container className="programs">
     <SectionHeader title="Mina program">
-      <ProgramProgress points={50} />
+      <ProgramProgress points={25} />
     </SectionHeader>
     <Row>
       <Col>
