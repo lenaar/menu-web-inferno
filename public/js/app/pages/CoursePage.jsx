@@ -79,7 +79,36 @@ function CourseBase ({title, href, icon, children}) {
   )
 }
 
-function CourseSection({filter}) { //current, finished, unfinished, coming courses
+function CourseSectionStudent({filter}) { //current, finished, unfinished, coming courses
+  return (
+    <Row>
+      <Col>
+        <CourseBase title="Algebra och geometri (SF1624)" href="http://localdev.kth.se:8000/social/course/EQ2220/" icon="course-pie-grey-50">
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2340">HT179</CourseMaterialLink>
+        </CourseBase>
+
+        <CourseBase title="Den hållbara ingenjören i trådlösa system (EQ2220)" href="http://localdev.kth.se:8000/social/course/EQ2220/" icon="course-pie-grey-25">
+        </CourseBase>
+
+        <CourseBase title="Ledarskap för säkerhet i kärnteknisk verksamhet (SH2610)" href="http://localdev.kth.se:8000/social/course/SH2610/" icon="course-pie-grey-75">
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2792">HT171 (ej publicerad)</CourseMaterialLink>
+        </CourseBase>
+      </Col>
+      <Col>
+        <CourseBase title="Lärande och undervisning i högre utbildning (LH231V)" href="http://localdev.kth.se:8000/social/course/LH231V/" icon="course-pie-grey-75">
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2340">HT171</CourseMaterialLink>
+        </CourseBase> 
+        <CourseBase title="Algebra och geometri (SF1624)" href="http://localdev.kth.se:8000/social/course/EQ2220/" icon="course-pie-grey-50">
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2340">HT179</CourseMaterialLink>
+        </CourseBase>
+        <CourseBase title="Den hållbara ingenjören i trådlösa system (EQ2220)" href="http://localdev.kth.se:8000/social/course/EQ2220/" icon="course-pie-grey-25">
+        </CourseBase>
+      </Col>
+    </Row>
+  )
+}
+
+function CourseSectionTeacher({filter}) { //favoriter, alla
   return (
     <Row>
       <Col>
@@ -133,19 +162,20 @@ function CourseFilter({userType, didFilter, state}) { //todo: depends on teacher
 
 function ProgramContainer () {
   return (
-  <Container className="programs">
-    <SectionHeader title="Mina program">
-      <ProgramProgress points={25} />
-    </SectionHeader>
-    <Row>
-      <Col>
-        <ProgramBase title="Civilingenjörsutbildning i datateknik(CDATE, 300hp)" href="http://localdev.kth.se:8000/social/program/cdate/"/>
-      </Col>
-      <Col>
-        <ProgramBase title="Masterprogram, datalogi (TCSCM, 120 hp)" href="http://localdev.kth.se:8000/social/program/cdate/"/>
-      </Col>
-    </Row>
-  </Container>)
+    <Container className="programs">
+      <SectionHeader title="Mina program">
+        <ProgramProgress points={25} />
+      </SectionHeader>
+      <Row>
+        <Col>
+          <ProgramBase title="Civilingenjörsutbildning i datateknik(CDATE, 300hp)" href="http://localdev.kth.se:8000/social/program/cdate/"/>
+        </Col>
+        <Col>
+          <ProgramBase title="Masterprogram, datalogi (TCSCM, 120 hp)" href="http://localdev.kth.se:8000/social/program/cdate/"/>
+        </Col>
+      </Row>
+    </Container>
+  )
 }
 
 function CourseContainer ({didFilter, state, userType}) {
@@ -153,7 +183,7 @@ function CourseContainer ({didFilter, state, userType}) {
     <Container className="courses" >
       <SectionHeader title="Mina kurser" />
       <CourseFilter userType={userType} didFilter={didFilter} state={state}/> 
-      <CourseSection filter="current"/>
+      <CourseSectionStudent filter="current"/>
     </Container>
 )
 }
