@@ -137,7 +137,14 @@ function ProgramContainer () {
     <SectionHeader title="Mina program">
       <ProgramProgress points={50} />
     </SectionHeader>
-    <ProgramBase title="Civilingenjörsutbildning i datateknik(CDATE, 300hp)" href="http://localdev.kth.se:8000/social/program/cdate/"/>
+    <Row>
+      <Col>
+        <ProgramBase title="Civilingenjörsutbildning i datateknik(CDATE, 300hp)" href="http://localdev.kth.se:8000/social/program/cdate/"/>
+      </Col>
+      <Col>
+        <ProgramBase title="Masterprogram, datalogi (TCSCM, 120 hp)" href="http://localdev.kth.se:8000/social/program/cdate/"/>
+      </Col>
+    </Row>
   </Container>)
 }
 
