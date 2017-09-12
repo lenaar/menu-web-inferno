@@ -19,14 +19,19 @@ import { SubjectLink, SectionHeader, SubjectNav, CourseNav, CourseMaterialLink} 
 import Card from 'inferno-bootstrap/lib/Card/Card.jsx'
 import CardBlock from 'inferno-bootstrap/lib/Card/CardBlock.jsx'
 
+function ProgramProgress ({points}) {
+    return (
+      <Col xs="5" className="progress-section">
+        <div className="text-center"><a href="#result">{points + 'Hp'} Studieresultat</a></div>
+        <Progress value={points} color="success"/>
+      </Col>
+    )
+}
+
 function Notices ({ status, points }) {
   return (
     <Container id="courses-program">
       <Row className="notice">
-        <Col xs="5" className="progress-section">
-          <div className="text-center"><a href="#result">{points + 'Hp'} Studieresultat</a></div>
-          <Progress value={points} />
-        </Col>
         <Col className="alert-section">
           <Alert color="warning" onClose role="alert">
             <span class="message">
@@ -128,8 +133,10 @@ function CourseFilter({userType, didFilter, state}) { //todo: depends on teacher
 
 function ProgramContainer () {
   return (
-  <Container className="programs" title="Mina program">
-    <SectionHeader title="Mina program"/>
+  <Container className="programs">
+    <SectionHeader title="Mina program">
+      <ProgramProgress points={50} />
+    </SectionHeader>
     <ProgramBase title="Civilingenjörsutbildning i datateknik(CDATE, 300hp)" href="http://localdev.kth.se:8000/social/program/cdate/"/>
   </Container>)
 }
@@ -167,7 +174,7 @@ class CoursePage extends Component {
 
     return (
       <div className="kth-menu-content">
-        <Notices status="open" points={50} />
+        <Notices status="open"/>
 
         <ProgramContainer />
         

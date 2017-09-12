@@ -52,8 +52,9 @@ export function SectionHeader ({title, children}) {
   return (
     <Row>
       <Col>
-        <h3>{title} </h3>  {children}
+        <h3>{title} </h3> 
       </Col>
+      {children}
     </Row>
   )
 }
