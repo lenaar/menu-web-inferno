@@ -22,7 +22,7 @@ function ProgramProgress ({points}) {
         <div className="text-center"><a href="#result">{points + 'Hp'} Studieresultat</a></div>
         <Progress multi>
           <Progress bar value={points} color="success"/>
-          <Progress bar value={points} color="warning"/>
+          <Progress bar value={points} color="info"/>
         </Progress>
       </Col>
     )
