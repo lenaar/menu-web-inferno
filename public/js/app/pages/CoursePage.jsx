@@ -84,22 +84,22 @@ function CourseSectionStudent({filter}) { //current, finished, unfinished, comin
     <Row>
       <Col>
         <CourseBase title="Algebra och geometri (SF1624)" href="http://localdev.kth.se:8000/social/course/EQ2220/" icon="course-pie-grey-50">
-          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2340">HT179</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2340">HT17-9</CourseMaterialLink>
         </CourseBase>
 
         <CourseBase title="Den hållbara ingenjören i trådlösa system (EQ2220)" href="http://localdev.kth.se:8000/social/course/EQ2220/" icon="course-pie-grey-25">
         </CourseBase>
 
         <CourseBase title="Ledarskap för säkerhet i kärnteknisk verksamhet (SH2610)" href="http://localdev.kth.se:8000/social/course/SH2610/" icon="course-pie-grey-75">
-          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2792">HT171 (ej publicerad)</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2792">HT17-1 (ej publicerad)</CourseMaterialLink>
         </CourseBase>
       </Col>
       <Col>
         <CourseBase title="Lärande och undervisning i högre utbildning (LH231V)" href="http://localdev.kth.se:8000/social/course/LH231V/" icon="course-pie-grey-75">
-          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2340">HT171</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2340">HT17-1</CourseMaterialLink>
         </CourseBase> 
         <CourseBase title="Algebra och geometri (SF1624)" href="http://localdev.kth.se:8000/social/course/EQ2220/" icon="course-pie-grey-50">
-          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2340">HT179</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2340">HT17-9</CourseMaterialLink>
         </CourseBase>
         <CourseBase title="Den hållbara ingenjören i trådlösa system (EQ2220)" href="http://localdev.kth.se:8000/social/course/EQ2220/" icon="course-pie-grey-25">
         </CourseBase>
@@ -113,30 +113,30 @@ function CourseSectionTeacher({filter}) { //favoriter, alla
     <Row>
       <Col>
         <CourseBase title="Algebra och geometri (SF1624)" href="http://localdev.kth.se:8000/social/course/EQ2220/" icon="course-pie-grey-50">
-          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2340">HT179</CourseMaterialLink>
-          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2339">HT173</CourseMaterialLink>
-          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2341">HT176</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2340">HT17-9</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2339">HT17-3</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2341">HT17-6</CourseMaterialLink>
         </CourseBase>
 
         <CourseBase title="Den hållbara ingenjören i trådlösa system (EQ2220)" href="http://localdev.kth.se:8000/social/course/EQ2220/" icon="course-pie-grey-25">
         </CourseBase>
 
         <CourseBase title="Ledarskap för säkerhet i kärnteknisk verksamhet (SH2610)" href="http://localdev.kth.se:8000/social/course/SH2610/" icon="course-pie-grey-75">
-          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2792">HT171 (ej publicerad)</CourseMaterialLink>
-          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2791">HT172 (ej publicerad)</CourseMaterialLink>
-          <CourseMaterialLink href="https://kth.test.instructure.com/courses/302">HT162 (ej publicerad)</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2792">HT17-1 (ej publicerad)</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2791">HT17-2 (ej publicerad)</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/302">HT16-2 (ej publicerad)</CourseMaterialLink>
         </CourseBase>
       </Col>
       <Col>
         <CourseBase title="Lärande och undervisning i högre utbildning (LH231V)" href="http://localdev.kth.se:8000/social/course/LH231V/" icon="course-pie-grey-75">
-          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2340">HT171</CourseMaterialLink>
-          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2339">HT161</CourseMaterialLink>
-          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2341">HT162</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2340">HT17-1</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2339">HT16-1</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2341">HT16-2</CourseMaterialLink>
         </CourseBase> 
         <CourseBase title="Algebra och geometri (SF1624)" href="http://localdev.kth.se:8000/social/course/EQ2220/" icon="course-pie-grey-50">
-          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2340">HT179</CourseMaterialLink>
-          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2339">HT173</CourseMaterialLink>
-          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2341">HT176</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2340">HT17-9</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2339">HT17-3</CourseMaterialLink>
+          <CourseMaterialLink href="https://kth.test.instructure.com/courses/2341">HT17-6</CourseMaterialLink>
         </CourseBase>
         <CourseBase title="Den hållbara ingenjören i trådlösa system (EQ2220)" href="http://localdev.kth.se:8000/social/course/EQ2220/" icon="course-pie-grey-25">
         </CourseBase>
