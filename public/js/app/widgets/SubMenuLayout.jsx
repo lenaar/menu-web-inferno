@@ -41,7 +41,8 @@ export function CourseNav ({title, icon, children}) {
 export function CourseMaterialLink ({href, status, children}) {
   return (
     <NavItem>
-      <NavLink href={href} className="course-material"><i class="icon-canvas"></i>{children} material</NavLink>
+      <NavLink href={href} className="course-material">
+        <i class="icon-canvas"></i>Material {children} </NavLink>
     </NavItem>
   )
 }
