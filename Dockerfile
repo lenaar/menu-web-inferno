@@ -27,7 +27,7 @@ RUN npm run docker
 COPY ["app.js", "app.js"]
 COPY ["server", "server"]
 
-ENV NODE_PATH /application
+#ENV NODE_PATH /application
 
 EXPOSE 3000
 
