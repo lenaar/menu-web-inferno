@@ -53,7 +53,7 @@ function routeFactory (initialPath) {
           <Route path="/profile" component={ ProfilePage } />
           <Route path="/schedule" component={ SchedulePage} />
           <Route path="/course" component={ CoursePage }/>
-          <Route path="/group" component={ GrourpPage }/>
+          <Route path="/group" component={ GroupPage }/>
           <Route path="/services" component={ ServicesPage }/>
           <Route path="/mail" component={ MailPage }/>
           <Route path="/notices" component={ NoticesPage} />

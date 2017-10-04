@@ -9,7 +9,7 @@
  */
 const { getEnv } = require('kth-node-configuration')
 
-const devPrefixPath = '/menu'
+const devPrefixPath = '/'
 
 module.exports = {
   // The proxy prefix path if the application is proxied. E.g /places
